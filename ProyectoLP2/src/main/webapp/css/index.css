@@ -1,0 +1,57 @@
+
+.BannerHome{
+    margin-bottom: 100px;
+}
+.SubTitulo, .BannerProd{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.SubTitulo{
+    height: 60px;
+    border-bottom: 10px solid thistle;
+}
+.SubTitulo h2{
+    padding-top: 20px;
+    color: rgb(34, 37, 37)
+}
+.SubTitulo button{
+    width: 100px;
+    height: 40px;
+    margin: auto 10px;
+}
+.BannerItem{
+    width: 300px;
+    height: 600px;
+}
+.BannerItem a{
+    text-decoration: none;
+}
+.ImgProducto{
+    height: 500px;
+    display: grid;
+}
+.ImagenProd{
+    margin: auto;
+}
+.DescripProducto, .PrecioProducto{
+    text-align: center;
+    font-size: x-large;
+}
+.DescripProducto{
+    color: rgb(63, 63, 63);
+}
+.PrecioProducto{
+    color: red;
+}
+footer{
+    height: 100px;
+    border-top: 10px solid red;
+}
+.pieDePagina, .pieDePagina div{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
