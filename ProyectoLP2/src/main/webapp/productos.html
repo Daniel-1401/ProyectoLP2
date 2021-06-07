@@ -8,9 +8,13 @@
     <link rel="stylesheet" type='text/css' media='screen' href='css/productos.css'>
     <link rel="stylesheet" type='text/css' media='screen' href='css/header.css'>
     <link rel="stylesheet icon" href="img/logo.png">
-    <link rel='stylesheer' type='text/css' media='screen' href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
-    <script></script>
-</head>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--  CSS DATATABLES -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" >
+    <!-- JS DATATABLES -->
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" ></script>
+s</head>
 <body>
     <header class="encabezado">
         <div class="logo">
@@ -89,60 +93,134 @@
     <main>
         <section>
             <div class="filtros">
-                <div class="comboBoxCategoria">
+                <dl class="FiltroMarca">
+                    <dt>Marca</dt>
+                    <dd>
+                        <ol>
+                            <li>
+                                <a href="#">Marca1</a>
+                            </li>
+                            <li>
+                                <a href="#">Marca2</a>
+                            </li>
+                            <li>
+                                <a href="#">Marca3</a>
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+                <dl class="FiltroPrecio">
+                    <dt>Marca</dt>
+                    <dd>
+                        <ol>
+                            <li>
+                                <a href="#">Precio1</a>
+                            </li>
+                            <li>
+                                <a href="#">Precio2</a>
+                            </li>
+                            <li>
+                                <a href="#">Precio3</a>
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <div class="CatalogoProductos">
+            <div class="toolBar">
+                <p>Total de articulos: XX</p>
+                <div class="OrderBy">
+                    <p>Ordenar por </p>
                     <select name="" id="">
-                        <option value="">Seleccionar</option>
-                        <option value="">Cat1</option>
-                        <option value="">Cat2</option>
-                        <option value="">Cat3</option>
-                        <option value="">Cat4</option>
+                        <option value="">Marca</option>
+                        <option value="">Precio</option>
                     </select>
                 </div>
-                <div class="comboBoxMarca">
+                <div class="Limiter">
+                    <p>Mostrar</p>
                     <select name="" id="">
-                        <option value="">Seleccionar</option>
-                        <option value="">Marca1</option>
-                        <option value="">Marca2</option>
-                        <option value="">Marca3</option>
-                        <option value="">Marca4</option>
-                    </select>
-                </div>
-                <div class="comboBoxPrecio">
-                    <select name="" id="">
-                        <option value="">Seleccionar</option>
-                        <option value="">Precio1</option>
-                        <option value="">Precio2</option>
-                        <option value="">Precio3</option>
-                        <option value="">Precio4</option>
+                        <option value="">10</option>
+                        <option value="">15</option>
+                        <option value="">20</option>
                     </select>
                 </div>
             </div>
-        </section>
-        <div class="tablaProductos">
-            <table id="table_id" class="display">
-                <thead>
-                    <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                        <th>Column 3</th>
-                        <th>Column 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Row 1 Data 1</td>
-                        <td>Row 1 Data 2</td>
-                        <td>Row 1 Data 3</td>
-                        <td>Row 1 Data 4</td>
-                    </tr>
-                    <tr>
-                        <td>Row 2 Data 1</td>
-                        <td>Row 2 Data 2</td>
-                        <td>Row 2 Data 3</td>
-                        <td>Row 2 Data 4</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="Productos">
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                <div class="ProductoItem">
+                    <a href="">
+                    <img src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
+                    <h3 class="infoProducto">Lenovo</h3>
+                    <h4 class="infoProducto">LAPTOP LENOVO YOGA SLIM 7</h4>
+                    <p class="infoProducto">S/. 3500.00</p>
+                    </a>
+                </div>
+                
+            </div>
         </div>
     </main>
 </body>

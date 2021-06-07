@@ -1,0 +1,32 @@
+main{
+    display: flex;
+}
+section{
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+}
+.toolBar{
+    display: flex;
+    height: 100px;
+}
+.CatalogoProductos{
+    width: 1000px;
+    border: 1px solid black;
+}
+.Productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 400px;
+}
+.ProductoItem{
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+.ProductoItem a{
+    text-decoration: none;
+}
+.infoProducto{
+    margin: 10px;
+}

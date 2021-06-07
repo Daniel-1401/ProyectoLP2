@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+<div id="contenedor">
+    <header class="encabezado">
+        <div class="logo">
+            <a href="index.html">
+                <img class="imgLogo" src="img/logo.png" alt="Imagenlogo">
+            </a>
+        </div>
+    </header>
+    <nav class="navegacion">
+        <div class="barraUsuario">
+            <div class="Usuario">
+                <div class="ImagenUsuario">
+                    <img class="imgUsuario" src="img/login.png" alt="imagenUsuario">
+                </div>
+                <div class="informacionUsuario">
+                    <div class="nombreUsuario">
+                        <p>Nombre Usuario</p>
+                    </div>
+                    <div class="sesionUsuario">
+                        <p>Sign in|Log out</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Carrito">
+                <div class="ImagenCarrito">
+                    <img class="imgCarrito" src="img/shop.png" alt="imgCarrito">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <nav style="width: 25%;float: left;">
+            <ul>
+                <li><a href="actualizaDatos.jsp">Actualiza datos</a></li>				
+                <li><a href="prod?opcion=c?">Catalogo</a></li>				
+                <li><a href="crudproductos.jsp">Mantenimiento</a></li>				
+                <li><a href="us">Cerrar sesion</a></li>			
+            </ul>
+        </nav>
+        <section style="width: 65%;float: left;">
+            <h2>Mantenimiento de Productos</h2>
+    <form action="prod" method="post">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Codigo del producto :</label> <input 
+                type="email" class="form-control" id="exampleInputName"
+                aria-describedby="emailHelp" placeholder="Ingrese Codigo" value="XXXXXXXXX">
+        </div>
+        <p></p>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Descripcion :</label> <input
+                type="email" class="form-control" id="exampleInputUsername"
+                aria-describedby="emailHelp"
+                placeholder="Ingrese nombre o descripcion del producto" value="XXXXXXXXX">
+        </div>
+        <p></p>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Stock :</label> <input type="email"
+                    class="form-control" id="inputEmail4" placeholder="0" value="XXXXXXXXX">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="price">Precio :</label> <input type="number"
+                    class="form-control" id="inputPassword4" placeholder="99999.99" value="XXXXXXXXX">
+            </div>
+        </div>
+        <p></p>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputState">Categoria :</label> 
+                <select id="inputState" class="form-control">
+                    <option>Seleccionar</option>
+                    <!-- <tools:comboCat/> -->
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputState">Estado</label> <select id="inputState"
+                    class="form-control">
+                    <option selected>Seleccionar</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+        </div>
+        <br>
+            <p>
+                <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
+                    <input type="file" name="imagen1" />
+                    
+                </form>   
+            </p>  
+        <p></p>
+        <button type="button" class="btn btn-info" 		name="opcion" value="r">Registrar</button>
+        <button type="button" class="btn btn-primary" 	name="opcion" value="a">Actualizar</button>
+        <button type="button" class="btn btn-danger" 	name="opcion" value="e">Eliminar</button>
+        <button type="button" class="btn btn-warning" 	name="opcion" value="l">Listado</button>
+    </form>
+               
+    </main>
+    <footer>
+    </footer>
+</div>
+
+</body>
+</html>
