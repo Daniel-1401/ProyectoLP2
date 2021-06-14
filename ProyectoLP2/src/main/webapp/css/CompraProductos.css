@@ -1,0 +1,87 @@
+.contenido{
+    width: 1300px;
+    margin: auto;
+}
+.Producto{
+    display: flex;
+}
+.ImagenesProducto{
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    margin: 20px;
+}
+.ImagenesProducto{
+    border: 1px solid black;
+}
+.imgPrincipal{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.SliderImagenes{
+    height: 100px;
+    width: 265px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.imgSecundario{
+    width: 85px;
+    height: 85px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.ShopProducto{
+    width: 720px;
+    height: 500px;
+    margin: 20px;
+}
+.NameProducto{
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.DescriptionProducto{
+    margin-bottom: 100px;
+    color: rgb(121, 121, 121);
+    font-size: 19px;
+}
+.PriceProducto{
+    color: red;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.StockProducto{
+    margin-bottom: 10px;
+}
+.AddProducto{
+    margin-top: 20px;
+}
+.AddProducto form{
+    display: flex
+}
+.AddProducto button{
+    width: 300px;
+    height: 70px;
+    background: yellowgreen;
+    border: yellowgreen;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.cantProd{
+    display: flex;
+    height: 70px;
+}
+.cantProd label{
+    margin: auto 5px auto 10px;
+    font-size: 18px;
+}
+.cantProd input{
+    width: 50px;
+    height: 35px;
+    margin: auto;
+    font-size: 20px;
+}

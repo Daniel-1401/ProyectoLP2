@@ -3,15 +3,19 @@
     padding: 0x;
 }
 body{
-    width: 1300px;
     margin: auto;
 }
 nav{
-    margin-bottom: 50px;
+    width: 1300px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .encabezado{
     display: flex;
-    
+}
+.barraNavegacion, .NavCategoria{
+    height: 80px;
+    background-color: rgb(119, 118, 118);
 }
 .logo{
     margin: auto;
@@ -20,11 +24,11 @@ nav{
     width: auto;
     height: 100px;
 }
-
 .barraUsuario{
     height: 80px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 .Usuario, .Carrito{
     display: flex;
