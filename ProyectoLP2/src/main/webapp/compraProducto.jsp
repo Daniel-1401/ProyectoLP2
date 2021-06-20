@@ -1,17 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Name Page</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" type='text/css' media='screen' href='css/CompraProductos.css'>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" type='text/css' media='screen' href='css/CompraProductos.css'>
     <link rel="stylesheet" type='text/css' media='screen' href='css/header.css'>
     <link rel="stylesheet" type='text/css' media='screen' href='css/footer.css'>
     <link rel="stylesheet icon" href="img/logo.png">
 </head>
 <body>
-    <header class="encabezado">
+	<header class="encabezado">
         <div class="logo">
             <a href="index.html">
                 <img class="imgLogo" src="img/logo.png" alt="Imagenlogo">
@@ -43,7 +43,7 @@
             <ul class="NavCategoria"> 
                 <li class="Categoria">
                     <a href="#">
-                        <p>ComputaciÃ³n</p>
+                        <p>Computación</p>
                     </a>
                     <!-- <ul class="NavSubCategoria">
                         <li class="SubCategoria">
@@ -113,7 +113,7 @@
                     </div>
                     <div class="AddProducto">
                         <form action="">
-                            <button>AÃ‘ADIR AL CARRITO</button>
+                            <button>AÑADIR AL CARRITO</button>
                             <div class="cantProd">
                                 <label for="">Und:</label>
                                 <input type="number" min="1" value="1"> 
@@ -131,7 +131,7 @@
     <footer>
         <div class="pieDePagina">
             <div>
-                <p>Â©2021 - Avalos Carlos</p>
+                <p>©2021 - Avalos Carlos</p>
             </div> 
             <div>
                 <img src="img/iconVisa.png" alt="">
