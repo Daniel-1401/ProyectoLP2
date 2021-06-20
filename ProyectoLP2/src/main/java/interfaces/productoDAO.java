@@ -1,5 +1,5 @@
 package interfaces;
 
-public class productoDAO {
+public interface productoDAO {
 
 }
