@@ -18,6 +18,18 @@ DROP SCHEMA IF EXISTS `ciberimpacto` ;
 CREATE SCHEMA IF NOT EXISTS `ciberimpacto` DEFAULT CHARACTER SET utf8 ;
 USE `ciberimpacto` ;
 
+
+-- -----------------------------------------------------
+-- Table `ciberimpacto`.`imagenPrueba`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ciberimpacto`.`imagenPrueba` (
+  `codImagen` 	INT         NOT NULL,
+  `nombre` 		  VARCHAR(50) NULL,
+  `imagen` 		  LONGBLOB    NULL,
+  PRIMARY KEY (`codImagen`))
+ENGINE = InnoDB;
+
+
 -- -----------------------------------------------------
 -- Table `ciberimpacto`.`tb_marca`
 -- -----------------------------------------------------
@@ -53,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_GPU` (
   `codGPU` 		  INT         NOT NULL,
   `codMarca` 	  INT         NOT NULL,
   `nombre` 		  VARCHAR(45) NOT NULL,
-  `capacidad` 	VARCHAR(5)  NOT NULL,
+  `capacidad` 	VARCHAR(10)  NOT NULL,
   PRIMARY KEY (`codGPU`),
   INDEX `fk_tbGPU_tbMarca:codMarca_idx` (`codMarca` ASC) VISIBLE,
   CONSTRAINT `fk_tbGPU_tbMarca:codMarca`
@@ -69,7 +81,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_tipoDiscoDuro` (
   `codTipoDiscoDuro` 	INT         NOT NULL,
-  `nombreTipo` 			  VARCHAR(45) NOT NULL,
+  `nombreTipo` 			  VARCHAR(10) NOT NULL,
   PRIMARY KEY (`codTipoDiscoDuro`))
 ENGINE = InnoDB;
 
@@ -103,7 +115,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_categoria` (
   `codCategoria` 	  INT         NOT NULL,
-  `nombreCategoria` VARCHAR(45) NOT NULL,
+  `nombreCategoria` VARCHAR(35) NOT NULL,
   PRIMARY KEY (`codCategoria`))
 ENGINE = InnoDB;
 
@@ -123,12 +135,10 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_producto` (
   `codProducto` 		    VARCHAR(5)    NOT NULL,
-  `nombreProducto` 		  VARCHAR(45)   NOT NULL,
-  `descripcionProducto` VARCHAR(150)  NOT NULL,
+  `modeloProducto`	 	  VARCHAR(45)   NOT NULL,
   `codCategoria` 		    INT           NOT NULL,
   `codMarca` 			      INT           NOT NULL,
-  `modeloProducto`	 	  VARCHAR(45)   NOT NULL,
-  `descripcionPantalla` VARCHAR(150)  NOT NULL,
+  `descripcionPantalla` VARCHAR(15)   NOT NULL,
   `codCPU` 				      INT           NOT NULL,
   `codGPU` 				      INT           NOT NULL,
   `codDiscoDuro` 		    INT           NOT NULL,
@@ -188,7 +198,7 @@ ENGINE = InnoDB;
 -- Table `ciberimpacto`.`tb_pais`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_pais` (
-  `codPais` VARCHAR(4)  NOT NULL,
+  `codPais` VARCHAR(2)  NOT NULL,
   `nombre` 	VARCHAR(15) NOT NULL,
   PRIMARY KEY (`codPais`))
 ENGINE = InnoDB;
@@ -198,8 +208,8 @@ ENGINE = InnoDB;
 -- Table `ciberimpacto`.`tb_ciudad`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_ciudad` (
-  `codCiudad` 		VARCHAR(5)   NOT NULL,
-  `nombreCiudad` 	VARCHAR(25) NOT NULL,
+  `codCiudad` 		VARCHAR(3)   NOT NULL,
+  `nombreCiudad` 	VARCHAR(25)  NOT NULL,
   PRIMARY KEY (`codCiudad`))
 ENGINE = InnoDB;
 
@@ -300,17 +310,6 @@ CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tbCarrito` (
     REFERENCES `ciberimpacto`.`tb_usuarios` (`codUsuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `ciberimpacto`.`imagenPrueba`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ciberimpacto`.`imagenPrueba` (
-  `codImagen` 	INT         NOT NULL,
-  `nombre` 		  VARCHAR(50) NULL,
-  `imagen` 		  LONGBLOB    NULL,
-  PRIMARY KEY (`codImagen`))
 ENGINE = InnoDB;
 
 

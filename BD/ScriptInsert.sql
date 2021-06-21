@@ -3,89 +3,82 @@ USE ciberimpacto;
 -- TB_MARCA
 insert into tb_marca values (01, 'SAMSUNG');
 insert into tb_marca values (02, 'HP');
-insert into tb_marca values (03, 'DELL');
-insert into tb_marca values (04, 'SONY');
-Insert into tb_marca values (05, 'Dell');
-Insert into tb_marca values (06, 'LG');
-Insert into tb_marca values (07, 'MSI');
-Insert into tb_marca values (08, 'Alienware');
-Insert into tb_marca values (10, 'Logitech');
-Insert into tb_marca values (11, 'Acer');
-Insert into tb_marca values (12, 'BenQ');
-Insert into tb_marca values (13, 'Nvidia');
-Insert into tb_marca values (14, 'AMD');
-Insert into tb_marca values (15, 'Intel');
-Insert into tb_marca values (16, 'Asus');
+Insert into tb_marca values (03, 'DELL');
+Insert into tb_marca values (04, 'MSI');
+Insert into tb_marca values (05, 'HUAWEI');
+Insert into tb_marca values (06, 'ACER');
+Insert into tb_marca values (07, 'Kingston');
+Insert into tb_marca values (08, 'Nvidia');
+Insert into tb_marca values (09, 'AMD');
+Insert into tb_marca values (10, 'Intel');
+Insert into tb_marca values (11, 'ASUS');
+Insert into tb_marca values (12, 'APPLE');
 
 -- TB_CPU
-Insert into tb_CPU values (01,15,'Procesador Intel','i9 11va Gen.'  );
-Insert into tb_CPU values (02,14,'Procesador AMD'  ,'Ryzen 9 5900X' );
-Insert into tb_CPU values (03,15,'Procesador Intel','i5 10ma Gen.'  );
-Insert into tb_CPU values (04,14,'Procesador AMD'  ,'Ryzen 7 5700X' );
-Insert into tb_CPU values (05,15,'Procesador Intel','i9 8va Gen.'   );
-Insert into tb_CPU values (06,14,'Procesador AMD'  ,'Ryzen 5 3600'  );
-Insert into tb_CPU values (07,15,'Procesador Intel','i9 10ma Gen.'  );
-Insert into tb_CPU values (08,14,'Procesador AMD'  ,'Ryzen 9 5950X' );
-Insert into tb_CPU values (09,15,'Procesador Intel','i5 10va Gen.'  );
-Insert into tb_CPU values (10,14,'Procesador AMD'  ,'Ryzen 9 3900X ');
+Insert into tb_CPU values (01,10,'Intel Core'      ,'i7 10ma Gen.'  );
+Insert into tb_CPU values (02,10,'Intel Core'      ,'i5 10ma Gen.'  );
+Insert into tb_CPU values (03,10,'Intel Core'      ,'i9 11va Gen.'   );
+Insert into tb_CPU values (04,09,'Procesador AMD'  ,'Ryzen 5 5900X' );
+Insert into tb_CPU values (05,09,'Procesador AMD'  ,'Ryzen 7 5700X' );
+Insert into tb_CPU values (06,09,'Procesador AMD'  ,'Ryzen 9 3600'  );
+Insert into tb_CPU values (07,09,'Procesador AMD'  ,'Ryzen 9 5950X' );
+Insert into tb_CPU values (09,09,'Procesador AMD'  ,'Ryzen 9 3900X ');
+Insert into tb_CPU values (10,12,'Chip'            ,'M1'            );
 
 -- TB_GPU
-insert into tb_GPU values (01,14, 'Radeon RX Vega 56'    ,'2 GB' );
-insert into tb_GPU values (02,14, 'Radeon RX Vega 56'    ,'6 GB' );
-Insert into tb_GPU values (03,13, 'NVIDIA RTX 3090'      ,'24 GB');
-Insert into tb_GPU values (04,14, 'AMD RADEON RX 6900 XT','16 GB');
-Insert into tb_GPU values (05,13, 'NVIDIA RTX 3080'      ,'20 GB');
-Insert into tb_GPU values (06,14, 'AMD RADEON RX 6800'   ,'16 GB');
-Insert into tb_GPU values (07,13, 'NVIDIA RTX 3070'      ,'8 GB' );
-Insert into tb_GPU values (08,14, 'AMD RADEON RX 6800 XT','8 GB' );
+Insert into tb_GPU values (01,08, 'RTX 3090'         ,'24 GB');
+Insert into tb_GPU values (02,08, 'RTX 3080'         ,'20 GB');
+Insert into tb_GPU values (03,08, 'RTX 3070'         ,'8 GB' );
+insert into tb_GPU values (04,09, 'RADEON RX Vega 56','2 GB' );
+insert into tb_GPU values (05,09, 'RADEON RX Vega 56','6 GB' );
+Insert into tb_GPU values (06,09, 'RADEON RX 6900 XT','16 GB');
+Insert into tb_GPU values (07,09, 'RADEON RX 6800 XT','8 GB' );
+Insert into tb_GPU values (08,09, 'RADEON RX 6800'   ,'16 GB');
+Insert into tb_GPU values (09,12, 'APPLE'            ,'7 Nucleos');
+
 
 -- TB_TIPODISCODURO
-insert into tb_tipoDiscoDuro values('DIS01','Disco duro SAS');
-Insert into tb_tipoDiscoDuro values ('TD001', 'SSD');
-Insert into tb_tipoDiscoDuro values ('TD002', 'HDD');
+Insert into tb_tipoDiscoDuro values (1, 'SSD');
+Insert into tb_tipoDiscoDuro values (2, 'HDD');
 
 -- TB_DISCODURO
-insert into tb_discoDuro values ('DIS01','MAR01','600MB','DIS01');
-insert into tb_discoDuro values ('DIS02','MAR02','1 TB','DIS01');
-Insert into tb_discoDuro values ('DD001', 'M0012','500GB','TD002');
-Insert into tb_discoDuro values ('DD002', 'M0013','1TBGB', 'TD001');
-Insert into tb_discoDuro values ('DD003', 'M0012','1TBGB','TD002');
-Insert into tb_discoDuro values ('DD004', 'M0013','250GB', 'TD001');
-Insert into tb_discoDuro values ('DD005', 'M0012','250GB', 'TD002');
-Insert into tb_discoDuro values ('DD006', 'M0013','500GB', 'TD001');
+Insert into tb_discoDuro values (01,01,'512 GB',2);
+insert into tb_discoDuro values (02,01,'512 GB',1);
+insert into tb_discoDuro values (03,01,'1 TB'  ,1);
+Insert into tb_discoDuro values (04,07,'256 GB',1);
+Insert into tb_discoDuro values (05,07,'516 GB',1);
+Insert into tb_discoDuro values (06,07,'1 TB'  ,1);
+Insert into tb_discoDuro values (07,12,'512 GB',1);
+Insert into tb_discoDuro values (08,12,'2 TB'  ,1);
 
 -- TB_CATEGORIA
-insert into tb_categoria values('CAT01', 'LAPTOP GAMER');
-insert into tb_categoria values('CAT02', 'LAPTOP DISEÑO');
-insert into tb_categoria values('CAT03', 'LAPTOP DESARROLLO SOFTWARE');
-Insert into tb_categoria values ('CT001', 'Laptop trabajo');
-Insert into tb_categoria values ('CT002', 'Laptop gamer');
-Insert into tb_categoria values ('CT003', 'PC trabajo');
-Insert into tb_categoria values ('CT004', 'PC gamer');
+insert into tb_categoria values (01, 'LAPTOP GAMER');
+insert into tb_categoria values (02, 'LAPTOP DISEÑO');
+Insert into tb_categoria values (03, 'LAPTOP TRABAJO');
+Insert into tb_categoria values (04, 'NOTEBOOKS');
+Insert into tb_categoria values (05, 'PC GAMER');
 
 -- TB_SISTEMAOPERATIVO
-insert into tb_sistemaoperativo values ('SIS01','WINDOWS 10');
-insert into tb_sistemaoperativo values ('SIS02','WINDOWS 7');
-Insert into tb_SistemaOperativo values ('SO001','Windows');
-Insert into tb_SistemaOperativo values ('SO002','MAC OS');
-Insert into tb_SistemaOperativo values ('SO003','Linux');
-Insert into tb_SistemaOperativo values ('SO004','Google Chrome OS');
+insert into tb_sistemaoperativo values (01,'WINDOWS 10');
+Insert into tb_SistemaOperativo values (02,'MAC OS');
 
 -- TB_PRODUCTO
-Insert into tb_produtcto values ('PD001','Laptop Swift',			'M0007','Swift',	'C0002','14 pulgadas','DD002','G0001','CT001','SO001','15000.00');
-Insert into tb_produtcto values ('PD002','Laptop Vostro',			'M0008','Vostro',	'C0003','15 pulgadas','DD003','G0002','CT002','SO001','10000.00');
-Insert into tb_produtcto values ('PD003','Laptop Thinkbook',		'M0009','Thinkbook','C0005','14 pulgadas','DD001','G0003','CT002','SO001','9000.00');
-Insert into tb_produtcto values ('PD004','Laptop Thinkpad',			'M0004','Thinkpad',	'C0007','16 pulgadas','DD005','G0004','CT002','SO001','8000.00');
-Insert into tb_produtcto values ('PD005','Laptop ASUS ROG ZEPHYRUS','M0003','Asus ROG',	'C0008','17 pulgadas','DD006','G0005','CT002','SO001','5000.00');
-Insert into tb_produtcto values ('PD006','Laptop HP15',				'M0004','HP15',		'C0003','18 pulgadas','DD004','G0006','CT002','SO001','4000.00');
+Insert into tb_produtcto values ('P0001','GP65 LEOPARD 10SEK',01,04,'15.6 pulgadas',01,03,05,01,7699.59);
+Insert into tb_produtcto values ('P0002','ZENBOOK DUO'       ,02,11,'14 pulgadas'  ,03,02,02,01,7999.99);
+Insert into tb_produtcto values ('P0003','PAVILION GAMING'   ,01,02,'15.6 pulgadas',06,05,04,01,4199.29);
+Insert into tb_produtcto values ('P0004','VOSTRO 3400'       ,03,03,'14 pulgadas'  ,02,04,02,01,3259.00);
+Insert into tb_produtcto values ('P0005','MATEBOOK X PRO'    ,04,05,'13.9 pulgadas',01,03,06,01,5799.99);
+Insert into tb_produtcto values ('P0006','AIR'               ,04,12,'13 pulgadas'  ,10,09,08,02,5199.79);
 
 -- TB_PAIS
-Insert into tb_pais values ('0001', 'Peru');
-Insert into tb_pais values ('0002', 'USA');
-Insert into tb_pais values ('0003', 'Alemania');
-Insert into tb_pais values ('0004', 'China');
-Insert into tb_pais values ('0005', 'Taiwan');
+Insert into tb_pais values ('PE', 'Peru');
+Insert into tb_pais values ('US', 'USA');
+Insert into tb_pais values ('DE', 'Alemania');
+Insert into tb_pais values ('CN', 'China');
+Insert into tb_pais values ('CL', 'Chile');
 
+
+-----------------------------------------------------------------------------
 -- TB_CIUDAD
 Insert into tb_ciudad values ('Cty01','Lima');
 Insert into tb_ciudad values ('Cty02','Arequipa');
