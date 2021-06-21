@@ -1,5 +1,9 @@
 package interfaces;
 
-public interface categoriaDAO {
+import java.util.ArrayList;
 
+import beans.categoriaDTO;
+
+public interface categoriaDAO {
+		ArrayList<categoriaDTO> listarCate();
 }

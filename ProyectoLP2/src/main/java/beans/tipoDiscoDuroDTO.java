@@ -1,54 +1,36 @@
 package beans;
 
 public class tipoDiscoDuroDTO {
-	
-	public int codDD;
-	public String codMarca, capacidad, codTipoDD;
-	
-	public int getCodDD() {
-		return codDD;
-	}
+		
+		public int codTipoDD;
+		public String nomTipoDD;
 
-	public void setCodDD(int codDD) {
-		this.codDD = codDD;
-	}
+		public int getCodTipoDD() {
+			return codTipoDD;
+		}
 
-	public String getCodMarca() {
-		return codMarca;
-	}
+		public void setCodTipoDD(int codTipoDD) {
+			this.codTipoDD = codTipoDD;
+		}
 
-	public void setCodMarca(String codMarca) {
-		this.codMarca = codMarca;
-	}
+		public String getNomTipoDD() {
+			return nomTipoDD;
+		}
 
-	public String getCapacidad() {
-		return capacidad;
-	}
+		public void setNomTipoDD(String nomTipoDD) {
+			this.nomTipoDD = nomTipoDD;
+		}
 
-	public void setCapacidad(String capacidad) {
-		this.capacidad = capacidad;
-	}
+		public tipoDiscoDuroDTO(int codTipoDD, String nomTipoDD) {
+			super();
+			this.codTipoDD = codTipoDD;
+			this.nomTipoDD = nomTipoDD;
+		}
 
-	public String getCodTipoDD() {
-		return codTipoDD;
-	}
-
-	public void setCodTipoDD(String codTipoDD) {
-		this.codTipoDD = codTipoDD;
-	}
-
-	public tipoDiscoDuroDTO(int codDD, String codMarca, String capacidad, String codTipoDD) {
-		super();
-		this.codDD = codDD;
-		this.codMarca = codMarca;
-		this.capacidad = capacidad;
-		this.codTipoDD = codTipoDD;
-	}
-
-	public tipoDiscoDuroDTO() {
-		super();
-	}
-
-	
-	
+		public tipoDiscoDuroDTO() {
+			super();
+		}
+		
+		
+		
 }
