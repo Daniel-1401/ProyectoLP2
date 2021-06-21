@@ -1,11 +1,26 @@
-.navegacionBarra{
+/* .navegacionBarra{
     max-width: 1000px;
     margin: 0 auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
+} */
+.barraNavegacion, .barraUsuario{
+    min-width: 1350px;
+    /* margin: auto; */
 }
-
+.barraUsuario{
+    margin-bottom: 10px;
+}
+.barraNavegacion{
+    display: flex;
+}
+.NavCategoria{
+    width: 1300px;
+    height: 50px;
+    margin: auto;
+    border: 1px solid black;
+}
 .menu>li, .menu>a {
     display: inline-block;
 }

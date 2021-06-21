@@ -1,9 +1,12 @@
-.contenido{
+.contenido, .ContenedorEspecificaciones{
     width: 1300px;
     margin: auto;
 }
-.Producto{
+.Producto, .ContenedorEspecificaciones{
     display: flex;
+    margin-top: 30px;
+    background: rgba(213, 211, 211, 0.563);
+    border-radius: 10px;
 }
 .ImagenesProducto{
     width: 500px;
@@ -84,4 +87,25 @@
     height: 35px;
     margin: auto;
     font-size: 20px;
+}
+.Especificaciones, .cuerpoEspecificaciones, .tabla{
+    width: 100%;
+}
+.tablaEspecificaciones{
+    width: 90%;
+    margin: auto;
+}
+.tituloEspecificaciones{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(42, 182, 42);
+}
+.tituloEspecificaciones h2{
+    font-size: 23px;
+    margin: 10px;
+}
+.RowSpecifiction{
+    height: 45px;
 }

@@ -9,82 +9,110 @@
     <link rel="stylesheet" type='text/css' media='screen' href='../css/header.css'>
     <link rel="stylesheet" type='text/css' media='screen' href='../css/footer.css'>
     <link rel="stylesheet icon" href="../img/logo.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/barraNavegacion.css">
 </head>
 <body>
     <header class="encabezado">
         <div class="logo">
-            <a href="../html/htmlindex.html">
+            <a href="htmlindex.html">
                 <img class="imgLogo" src="../img/logo.png" alt="Imagenlogo">
             </a>
         </div>
     </header>
-    <nav class="navegacion">
-        <div class="barraUsuario">
-            <div class="Usuario">
-                <div class="ImagenUsuario">
-                    <img class="imgUsuario" src="../img/login.png" alt="imagenUsuario">
-                </div>
-                <div class="informacionUsuario">
-                    <div class="nombreUsuario">
-                        <p>Nombre Usuario</p>
-                    </div>
-                    <div class="sesionUsuario">
-                        <p>Sign in|Log out</p>
-                    </div>
-                </div>
+    <div class="barraUsuario">
+        <div class="Usuario">
+            <div class="ImagenUsuario">
+                <img class="imgUsuario" src="../img/login.png" alt="imagenUsuario">
             </div>
-            <div class="Carrito">
-                <div class="ImagenCarrito">
-                    <img class="imgCarrito" src="../img/shop.png" alt="imgCarrito">
+            <div class="informacionUsuario">
+                <div class="nombreUsuario">
+                    <p>Nombre Usuario</p>
+                </div>
+                <div class="sesionUsuario">
+                    <p>Sign in|Log out</p>
                 </div>
             </div>
         </div>
-        <div class="barraNavegacion">
-            <ul class="NavCategoria"> 
-                <li class="Categoria">
-                    <a href="#">
-                        <p>Computación</p>
-                    </a>
-                    <!-- <ul class="NavSubCategoria">
-                        <li class="SubCategoria">
-                            <a href="#">
-                                <span>Laptops</span>
-                            </a>
-                            <ul class="NavSubCategoria">
-                                <li class="SubCategoria">s
-                                    <a href="#">
-                                        <span>Laptops</span>
-                                    </a>
-                                </li>
-                                <li class="SubCategoria">
-                                    <a href="#">
-                                        <span>Laptops Gamer</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="SubCategoria">
-                            <a href="#">
-                                <span>Monitores</span>
-                            </a>
-                            <ul class="NavSubCategoria">
-                                <li class="SubCategoria">
-                                    <a href="#">
-                                        <span>Monitores de Escritorio</span>
-                                    </a>
-                                </li>
-                                <li class="SubCategoria">
-                                    <a href="#">
-                                        <span>Monitores Gamer</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul> -->
-                </li>                     
-            </ul>
+        <div class="Carrito">
+            <div class="ImagenCarrito">
+                <img class="imgCarrito" src="../img/shop.png" alt="imgCarrito">
+            </div>
         </div>
-    </nav>
+    </div>
+    <div class="barraNavegacion">
+        <ul class="NavCategoria"> 
+            <!-- <nav>
+                <div class="navegacionBarra">
+                    <ul class="menu">
+                        <li><a href="#">Computacion</a>
+    
+                            <ul class="submenu">
+                                <li><a href="#">Laptops</a>
+                                    <ul class="submenu2">
+                                        <li><a href="#">NOSE</a></li>
+                                        <li><a href="#">NOSE</a></li>
+                                        <li><a href="#">NOSE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">XXXXXXX</a></li>
+                            </ul>
+    
+                        <li><a href="#">XXXXX</a>
+    
+                        <li><a href="#">XXXXX</a>
+    
+                        <li><a href="#">XXXXX</a>
+    
+                        <li><a href="#">XXXXX</a>
+    
+                        <li><a href="#">XXXXX</a>
+    
+                    </ul>
+                </div>
+            </nav> -->
+            <li class="Categoria">
+                <a href="#">
+                    <p>Computación</p>
+                </a>
+                <ul class="NavSubCategoria">
+                    <li class="SubCategoria">
+                        <a href="#">
+                            <span>Laptops</span>
+                        </a>
+                        <ul class="NavSubCategoria">
+                            <li class="SubCategoria">
+                                <a href="#">
+                                    <span>Laptops</span>
+                                </a>
+                            </li>
+                            <li class="SubCategoria">
+                                <a href="#">
+                                    <span>Laptops Gamer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="SubCategoria">
+                        <a href="#">
+                            <span>Monitores</span>
+                        </a>
+                        <ul class="NavSubCategoria">
+                            <li class="SubCategoria">
+                                <a href="#">
+                                    <span>Monitores de Escritorio</span>
+                                </a>
+                            </li>
+                            <li class="SubCategoria">
+                                <a href="#">
+                                    <span>Monitores Gamer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>                     
+        </ul>
+    </div>
     <main>
         <div class="contenido">
             <div class="Producto">
@@ -122,8 +150,40 @@
                     </div>
                 </div>
             </div>
-            <div class="Especificaciones">
-                <h3>Especificaciones</h3>
+            <div class="ContenedorEspecificaciones">
+                <div class="Especificaciones">
+                    <section class="tablaEspecificaciones">
+                        <div class="tituloEspecificaciones">
+                            <h2>Especificaciones</h2>
+                        </div>
+                        <div class="cuerpoEspecificaciones">
+                            <table class="tabla">
+                                <tbody class="tabla cuerpoTabla">
+                                    <tr class="RowSpecifiction">
+                                        <td class="propiedadName">Procesador</td>
+                                        <td class="propiedadValor">Intel Core i7 10ma Gen.</td>
+                                    </tr>
+                                    <tr class="RowSpecifiction">
+                                        <td class="propiedadName">Procesador</td>
+                                        <td class="propiedadValor">Intel Core i7 10ma Gen.</td>
+                                    </tr>
+                                    <tr class="RowSpecifiction">
+                                        <td class="propiedadName">Procesador</td>
+                                        <td class="propiedadValor">Intel Core i7 10ma Gen.</td>
+                                    </tr>
+                                    <tr class="RowSpecifiction">
+                                        <td class="propiedadName">Procesador</td>
+                                        <td class="propiedadValor">Intel Core i7 10ma Gen.</td>
+                                    </tr>
+                                    <tr class="RowSpecifiction">
+                                        <td class="propiedadName">Procesador</td>
+                                        <td class="propiedadValor">Intel Core i7 10ma Gen.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
         
