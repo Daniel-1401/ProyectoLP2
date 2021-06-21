@@ -63,49 +63,63 @@ insert into tb_sistemaoperativo values (01,'WINDOWS 10');
 Insert into tb_SistemaOperativo values (02,'MAC OS');
 
 -- TB_PRODUCTO
-Insert into tb_produtcto values ('P0001','GP65 LEOPARD 10SEK',01,04,'15.6 pulgadas',01,03,05,01,7699.59);
-Insert into tb_produtcto values ('P0002','ZENBOOK DUO'       ,02,11,'14 pulgadas'  ,03,02,02,01,7999.99);
-Insert into tb_produtcto values ('P0003','PAVILION GAMING'   ,01,02,'15.6 pulgadas',06,05,04,01,4199.29);
-Insert into tb_produtcto values ('P0004','VOSTRO 3400'       ,03,03,'14 pulgadas'  ,02,04,02,01,3259.00);
-Insert into tb_produtcto values ('P0005','MATEBOOK X PRO'    ,04,05,'13.9 pulgadas',01,03,06,01,5799.99);
-Insert into tb_produtcto values ('P0006','AIR'               ,04,12,'13 pulgadas'  ,10,09,08,02,5199.79);
-
--- TB_PAIS
-Insert into tb_pais values ('PE', 'Peru');
-Insert into tb_pais values ('US', 'USA');
-Insert into tb_pais values ('DE', 'Alemania');
-Insert into tb_pais values ('CN', 'China');
-Insert into tb_pais values ('CL', 'Chile');
-
-
------------------------------------------------------------------------------
--- TB_CIUDAD
-Insert into tb_ciudad values ('Cty01','Lima');
-Insert into tb_ciudad values ('Cty02','Arequipa');
-Insert into tb_ciudad values ('Cty03','Piura');
-Insert into tb_ciudad values ('Cty04','Ica');
-Insert into tb_ciudad values ('Cty05','Puno');
-
--- TB_ TIPODOCUMENTO
-Insert into tb_TipoDocumento values ('TDOC1','DNI');
-Insert into tb_TipoDocumento values ('TDOC2','Pasaporte');
+Insert into tb_producto values ('P0001','GP65 LEOPARD 10SEK',01,04,'15.6 pulgadas',01,03,05,01,7699.59);
+Insert into tb_producto values ('P0002','ZENBOOK DUO'       ,02,11,'14 pulgadas'  ,03,02,02,01,7999.99);
+Insert into tb_producto values ('P0003','PAVILION GAMING'   ,01,02,'15.6 pulgadas',06,05,04,01,4199.29);
+Insert into tb_producto values ('P0004','VOSTRO 3400'       ,03,03,'14 pulgadas'  ,02,04,02,01,3259.00);
+Insert into tb_producto values ('P0005','MATEBOOK X PRO'    ,04,05,'13.9 pulgadas',01,03,06,01,5799.99);
+Insert into tb_producto values ('P0006','AIR'               ,04,12,'13 pulgadas'  ,10,09,08,02,5199.79);
 
 -- TB_TIPOUSUARIO
 Insert into tb_TipoUsuario values (1,'Administrador');
 Insert into tb_TipoUsuario values (2,'Cliente');
 
+-- TB_PAIS
+Insert into tb_pais values ('PE', 'Peru');
+-- Insert into tb_pais values ('US', 'USA');
+-- Insert into tb_pais values ('DE', 'Alemania');
+-- Insert into tb_pais values ('CN', 'China');
+-- Insert into tb_pais values ('CL', 'Chile');
+
+
+-- TB_CIUDAD
+INSERT INTO tb_ciudad VALUES ('AMA','Amazonas');
+INSERT INTO tb_ciudad VALUES ('ANC','Ancash');
+INSERT INTO tb_ciudad VALUES ('APU','Apurimac');
+INSERT INTO tb_ciudad VALUES ('ARE','Arequipa');
+INSERT INTO tb_ciudad VALUES ('AYA','Ayacucho');
+INSERT INTO tb_ciudad VALUES ('CAJ','Cajamarca');
+INSERT INTO tb_ciudad VALUES ('CAL','Callao');
+INSERT INTO tb_ciudad VALUES ('CUS','Cusco');
+INSERT INTO tb_ciudad VALUES ('HUC','Huanuco');
+INSERT INTO tb_ciudad VALUES ('ICA','Ica');
+INSERT INTO tb_ciudad VALUES ('JUN','Junin');
+INSERT INTO tb_ciudad VALUES ('LAL','La Libertad');
+INSERT INTO tb_ciudad VALUES ('LAM','Lambayeque');
+INSERT INTO tb_ciudad VALUES ('LIM','Lima departamento');
+INSERT INTO tb_ciudad VALUES ('LMA','Lima provincia');
+INSERT INTO tb_ciudad VALUES ('LOR','Loreto');
+Insert into tb_ciudad values ('MDD','Madre de dios');
+Insert into tb_ciudad values ('PIU','Piura');
+Insert into tb_ciudad values ('PUN','Puno');
+
+-- TB_ TIPODOCUMENTO
+Insert into tb_TipoDocumento values (01,'DNI');
+Insert into tb_TipoDocumento values (02,'Pasaporte');
+
+-----------------------------------------------------------------------------
+
 -- TB_USUARIOS
-Insert into tb_usuarios values ('admin',1,'admin1@hotmail.com','12345','Bad','Bunny');
-Insert into tb_usuarios values ('usu01',2,'usuario1@hotmail.com','54321','J','Balvin');
-
--- TB_CLIENTES
-Insert into tb_clientes values (2,'usu01',null,'Av. Javier Prado 666','0001','Cty01','TDOC1','75548952','987654321');
-
--- TB_ADMINISTRADORES
-Insert into tb_administradores values ('adm01', 'admin', 'Bad','Bunny', 'Brrrr', 'TDOC1', '78854152', '987654654', '0001','Cty01');
+Insert into tb_usuarios values ('US001',1,'admin1@hotmail.com' ,'admin'  ,'Bad'  ,'Bunny' ,1,'82658429','975312468','PE','LIM','10826584299','direccion 1');
+Insert into tb_usuarios values ('US002',2,'cliente@hotmail.com','cliente','J'    ,'Balvin',1,'72882226','924007726','PE','LIM','10728822267','direccion Balvin');
+INSERT INTO tb_usuarios(codUsuario,codTipoUsuario,email,contraseña,nombreCompleto,apellidoCompleto) VALUES ('US003',2,'usuario@hotmail.com','usuario','Setch','ElPepe');
 
 -- TB_FACTURA
-Insert into tb_Factura values ('FAC01','2','2020-01-01','15000.00','20');
+Insert into tb_Factura values ('FC00000001','US002','2020-01-01',13499.58,15.50);
 
 -- TB_CARRITO
-Insert into tbCarrito values (1,'usu01','FAC01','PD001',5,'75000.00');
+Insert into tbCarrito values ('US003',1,'P0006',1,5199.79);
+
+-- TB DETALLEFACTURA
+INSERT INTO tb_DetalleFactura VALUES ('FC00000001',1,'P0005',1,5799.99);
+INSERT INTO tb_DetalleFactura VALUES ('FC00000001',2,'P0001',1,7699.59);

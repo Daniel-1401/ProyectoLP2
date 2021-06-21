@@ -92,7 +92,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_discoDuro` (
   `codDiscoDuro` 		  INT         NOT NULL,
   `codMarca` 			    INT         NOT NULL,
-  `capacidad` 		  	VARCHAR(5)  NOT NULL,
+  `capacidad` 		  	VARCHAR(10)  NOT NULL,
   `codTipoDiscoDuro` 	INT         NOT NULL,
   PRIMARY KEY (`codDiscoDuro`),
   INDEX `fk_tbDiscoDuro_tbTipoDIscoDuro:codTipoDiscoDuro_idx` (`codTipoDiscoDuro` ASC) VISIBLE,
@@ -189,7 +189,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_TipoUsuario` (
   `codTipoUsuario` 	INT         NOT NULL,
-  `nombreTipo` 		  VARCHAR(45) NOT NULL,
+  `nombreTipo` 		  VARCHAR(15) NOT NULL,
   PRIMARY KEY (`codTipoUsuario`))
 ENGINE = InnoDB;
 
@@ -228,18 +228,18 @@ ENGINE = InnoDB;
 -- Table `ciberimpacto`.`tb_usuarios`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_usuarios` (
-  `codUsuario` 			  VARCHAR(5)    NOT NULL,
-  `codTipoUsuario` 		VARCHAR(5)    NOT NULL,
+  `codUsuario` 			  VARCHAR(5)    NOT NULL ,
+  `codTipoUsuario` 	  INT           DEFAULT 2,
   `email`				      VARCHAR(100)  NOT NULL,
   `contraseña` 			  VARCHAR(16)   NOT NULL,
   `nombreCompleto` 		VARCHAR(45)   NOT NULL,
   `apellidoCompleto` 	VARCHAR(45)   NOT NULL,
   `codTipoDocumento` 	INT           NULL,
-  `numeroDocumento` 	VARCHAR(45)   NULL,
-  `numeroTelefonico` 	VARCHAR(45)   NULL,
-  `codPais` 			    VARCHAR(45)   NULL,
-  `codCiudad` 			  VARCHAR(45)   NULL,
-  `numeroRUC` 			  VARCHAR(45)   NULL,
+  `numeroDocumento` 	VARCHAR(9)    NULL,
+  `numeroTelefonico` 	VARCHAR(9)    NULL,
+  `codPais` 			    VARCHAR(2)    NULL,
+  `codCiudad` 			  VARCHAR(3)    NULL,
+  `numeroRUC` 			  VARCHAR(11)   NULL,
   `direccion` 			  VARCHAR(45)   NULL,
   PRIMARY KEY (`codUsuario`),
   INDEX `fk_tbUsuarios_tbTipoUsuario:codTipoUsuario_idx` (`codTipoUsuario` ASC) VISIBLE,
@@ -273,7 +273,7 @@ ENGINE = InnoDB;
 -- Table `ciberimpacto`.`tb_Factura`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_Factura` (
-  `codFactura` 		VARCHAR(5)    NOT NULL,
+  `codFactura` 		VARCHAR(10)   NOT NULL,
   `codUsuario` 		VARCHAR(5)    NOT NULL,
   `fechaPedido` 	DATETIME      NOT NULL,
   `total` 			  DECIMAL(7,2)  NOT NULL,
@@ -282,7 +282,7 @@ CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_Factura` (
   INDEX `fk_tbFactura_tbUsuario:codUsuario_idx` (`codUsuario` ASC) VISIBLE,
   CONSTRAINT `fk_tbFactura_tbUsuario:codUsuario`
     FOREIGN KEY (`codUsuario`)
-    REFERENCES `ciberimpacto`.`tb_usuarios` (`codTipoUsuario`)
+    REFERENCES `ciberimpacto`.`tb_usuarios` (`codUsuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -292,14 +292,14 @@ ENGINE = InnoDB;
 -- Table `ciberimpacto`.`tbCarrito`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tbCarrito` (
-  `codCarrito` 	INT           NOT NULL AUTO_INCREMENT,
   `codUsuario` 	VARCHAR(5)    NOT NULL,
+  `codCarrito` 	INT           NOT NULL AUTO_INCREMENT,
   `codProducto` VARCHAR(5)    NOT NULL,
   `cantidad` 	  INT           NOT NULL,
   `SubTotal` 	  DECIMAL(7,2)  NOT NULL,
   PRIMARY KEY (`codCarrito`, `codUsuario`),
-  INDEX `fk_tbCarrito_tbProducto:codProducto_idx` (`codProducto` ASC) VISIBLE,
   INDEX `fk_tbCarrito_tbUsuario:codUsuario_idx` (`codUsuario` ASC) VISIBLE,
+  INDEX `fk_tbCarrito_tbProducto:codProducto_idx` (`codProducto` ASC) VISIBLE,
   CONSTRAINT `fk_tbCarrito_tbProducto:codProducto`
     FOREIGN KEY (`codProducto`)
     REFERENCES `ciberimpacto`.`tb_producto` (`codProducto`)
@@ -317,7 +317,7 @@ ENGINE = InnoDB;
 -- Table `ciberimpacto`.`tb_DetalleFactura`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_DetalleFactura` (
-  `codFactura` 			    VARCHAR(5)    NOT NULL,
+  `codFactura` 			    VARCHAR(10)    NOT NULL,
   `codDetalleFactura` 	INT           NOT NULL,
   `codProducto` 		    VARCHAR(5)    NOT NULL,
   `cantidad` 			      INT           NOT NULL,
