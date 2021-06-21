@@ -5,17 +5,9 @@
 body{
     margin: auto;
 }
-nav{
-    width: 1300px;
-    margin: auto;
-    margin-bottom: 20px;
-}
+
 .encabezado{
     display: flex;
-}
-.barraNavegacion, .NavCategoria{
-    height: 80px;
-    background-color: rgb(119, 118, 118);
 }
 .logo{
     margin: auto;

@@ -5,6 +5,7 @@
 .Producto, .ContenedorEspecificaciones{
     display: flex;
     margin-top: 30px;
+    margin-bottom: 25px;
     background: rgba(213, 211, 211, 0.563);
     border-radius: 10px;
 }
@@ -106,6 +107,21 @@
     font-size: 23px;
     margin: 10px;
 }
+.cuerpoEspecificaciones{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .RowSpecifiction{
-    height: 45px;
+    height: 40px; 
+}
+.RowSpecifiction td{
+    font-size: 20px;
+    padding-left: 20px;
+}
+table tbody tr:nth-child(odd) {
+	background: #9f9d9995;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
