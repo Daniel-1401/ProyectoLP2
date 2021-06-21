@@ -31,17 +31,118 @@
             </div>
             <div class="informacionUsuario">
                 <div class="nombreUsuario">
-                    <p>Nombre Usuario</p>
+                    <p>Nombre Usuario/inicia sesion</p>
                 </div>
-                <div class="sesionUsuario">
-                    <p>Sign in|Log out</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Iniciar Sesion
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="botonesModal d-grid gap-1 col-6 mx-auto">
+                                        <button class="btn btn-primary" type="button">Ingresar</button>
+                                        <p>o</p>
+                                        <button class="btn btn-primary" type="button">Registrate</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="Carrito">
-            <div class="ImagenCarrito">
-                <img class="imgCarrito" src="../img/shop.png" alt="imgCarrito">
-            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="imgCarrito" src="../img/shop.png" alt="imgCarrito">
+                </button>
+                <ul class="itemsCarrito dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">LAPTOP</div>
+                                Lenovo Legion
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="imgItem">
+                                    <img src="../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">CANTIDAD</div>
+                                <input type="number" min="1" value="1">
+                                <button type="button" class="btn btn-secondary">confirmar</button>
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">SUBTOTAL</div>
+                                9999.99
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">LAPTOP</div>
+                                Lenovo Legion
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="imgItem">
+                                    <img src="../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">CANTIDAD</div>
+                                <input type="number" min="1" value="1">
+                                <button type="button" class="btn btn-secondary">confirmar</button>
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">SUBTOTAL</div>
+                                9999.99
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">LAPTOP</div>
+                                Lenovo Legion
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="imgItem">
+                                    <img src="../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">CANTIDAD</div>
+                                <input type="number" min="1" value="1">
+                                <button type="button" class="btn btn-secondary">confirmar</button>
+                            </div>
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">SUBTOTAL</div>
+                                9999.99
+                            </div>
+                        </li>
+                    </ol>
+                    <ul class="list-group list-group-flush">
+                        <br>
+                        <li class="list-group-item">
+                            <h4>TOTAL:</h4>
+                            <p>9999.99</p>
+                        </li>
+                      </ul>
+                </ul>
+              </div>
         </div>
     </div>
     <div class="barraNavegacion">
