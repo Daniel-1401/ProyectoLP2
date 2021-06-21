@@ -1,5 +1,7 @@
 package mantenimiento;
 
-public interface MySQLFacturaDAO {
+import interfaces.facturaDAO;
+
+public class MySQLFacturaDAO implements facturaDAO{
 
 }

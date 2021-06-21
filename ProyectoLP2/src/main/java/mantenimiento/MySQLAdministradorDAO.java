@@ -1,5 +1,7 @@
 package mantenimiento;
 
-public class MySQLAdministradorDAO {
+import interfaces.administradorDAO;
+
+public class MySQLAdministradorDAO implements administradorDAO {
 
 }

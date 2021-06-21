@@ -1,5 +1,7 @@
 package mantenimiento;
 
-public class MySQLCategoriaDAO {
+import interfaces.categoriaDAO;
+
+public class MySQLCategoriaDAO implements categoriaDAO {
 
 }
