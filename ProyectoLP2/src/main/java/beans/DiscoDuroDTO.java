@@ -2,13 +2,14 @@ package beans;
 
 public class DiscoDuroDTO {
 		
-		public String codTipoDD, nomTipoDD;
+		public int codTipoDD;
+		public String nomTipoDD;
 
-		public String getCodTipoDD() {
+		public int getCodTipoDD() {
 			return codTipoDD;
 		}
 
-		public void setCodTipoDD(String codTipoDD) {
+		public void setCodTipoDD(int codTipoDD) {
 			this.codTipoDD = codTipoDD;
 		}
 
@@ -20,7 +21,7 @@ public class DiscoDuroDTO {
 			this.nomTipoDD = nomTipoDD;
 		}
 
-		public DiscoDuroDTO(String codTipoDD, String nomTipoDD) {
+		public DiscoDuroDTO(int codTipoDD, String nomTipoDD) {
 			super();
 			this.codTipoDD = codTipoDD;
 			this.nomTipoDD = nomTipoDD;

@@ -1,5 +1,7 @@
 package mantenimiento;
 
-public class MySQLUsuarioDAO {
+import interfaces.usuarioDAO;
+
+public class MySQLUsuarioDAO implements usuarioDAO {
 
 }

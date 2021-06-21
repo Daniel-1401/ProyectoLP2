@@ -1,5 +1,7 @@
 package mantenimiento;
 
-public class MySQLCarritoDAO {
+import interfaces.carritoDAO;
+
+public class MySQLCarritoDAO implements carritoDAO {
 
 }

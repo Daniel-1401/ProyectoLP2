@@ -2,15 +2,14 @@ package beans;
 
 public class tipoDiscoDuroDTO {
 	
-	public String codDD, codMarca, capacidad, codTipoDD;
-
+	public int codDD;
+	public String codMarca, capacidad, codTipoDD;
 	
-	
-	public String getCodDD() {
+	public int getCodDD() {
 		return codDD;
 	}
 
-	public void setCodDD(String codDD) {
+	public void setCodDD(int codDD) {
 		this.codDD = codDD;
 	}
 
@@ -38,7 +37,7 @@ public class tipoDiscoDuroDTO {
 		this.codTipoDD = codTipoDD;
 	}
 
-	public tipoDiscoDuroDTO(String codDD, String codMarca, String capacidad, String codTipoDD) {
+	public tipoDiscoDuroDTO(int codDD, String codMarca, String capacidad, String codTipoDD) {
 		super();
 		this.codDD = codDD;
 		this.codMarca = codMarca;

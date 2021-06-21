@@ -2,13 +2,14 @@ package beans;
 
 public class categoriaDTO {
 	
-	public String codCategoria, nomCategoria;
+	public int codCategoria;
+	public String nomCategoria;
 
-	public String getCodCategoria() {
+	public int getCodCategoria() {
 		return codCategoria;
 	}
 
-	public void setCodCategoria(String codCategoria) {
+	public void setCodCategoria(int codCategoria) {
 		this.codCategoria = codCategoria;
 	}
 
@@ -20,7 +21,7 @@ public class categoriaDTO {
 		this.nomCategoria = nomCategoria;
 	}
 
-	public categoriaDTO(String codCategoria, String nomCategoria) {
+	public categoriaDTO(int codCategoria, String nomCategoria) {
 		super();
 		this.codCategoria = codCategoria;
 		this.nomCategoria = nomCategoria;

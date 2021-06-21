@@ -1,5 +1,7 @@
 package mantenimiento;
 
-public class MySQLProductoDAO {
+import interfaces.productoDAO;
+
+public class MySQLProductoDAO implements productoDAO {
 
 }
