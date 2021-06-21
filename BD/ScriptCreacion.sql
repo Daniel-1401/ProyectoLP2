@@ -337,6 +337,29 @@ CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_DetalleFactura` (
 ENGINE = InnoDB;
 
 
+Select * from `ciberimpacto`.`tb_producto`;
+
+Create procedure ListarProductos()
+Select * from tb_producto;
+call ciberimpacto.ListarProductos();
+
+DELIMITER $$
+Create procedure AgregarProducto(
+IN cod_prod 		varchar(5),
+IN modelo_prod		varchar(45),
+IN cod_cate			int,
+IN cod_marca		int,
+IN descrip			varchar(15),
+IN cod_CPU			int,
+IN cod_GPU			int,
+IN cod_DiscoD		int,
+IN cod_SO			int,
+IN precioV			decimal(7,2))
+Begin
+Insert into tb_producto(codProducto, modeloProducto, codCategoria, codMarca, descripcionPantalla, codCPU, codGPU, codDiscoDuro, codSistemaOperativo, precioVenta) values (cod_prod, modelo_prod, cod_cate, cod_marca, descrip, cod_CPU, cod_GPU, cod_DiscoD, cod_SO, precioV);
+End;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
