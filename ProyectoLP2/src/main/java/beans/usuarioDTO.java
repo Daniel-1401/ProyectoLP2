@@ -4,9 +4,28 @@ public class usuarioDTO {
 		public String codUsu;
 		public int codTipoUsu;
 		public String email, contraseña, nomUsu, apeUsu;
-		public String getCodUsu() {
+		public String getCodUsu() 
+		
+		
+		
+		
+		
+		{
 			return codUsu;
 		}
+		
+		public usuarioDTO(String codUsu, int codTipoUsu, String email, String contraseña, String nomUsu,
+				String apeUsu) {
+			super();
+			this.codUsu = codUsu;
+			this.codTipoUsu = codTipoUsu;
+			this.email = email;
+			this.contraseña = contraseña;
+			this.nomUsu = nomUsu;
+			this.apeUsu = apeUsu;
+		}
+		
+		
 		public void setCodUsu(String codUsu) {
 			this.codUsu = codUsu;
 		}
@@ -40,16 +59,7 @@ public class usuarioDTO {
 		public void setApeUsu(String apeUsu) {
 			this.apeUsu = apeUsu;
 		}
-		public usuarioDTO(String codUsu, int codTipoUsu, String email, String contraseña, String nomUsu,
-				String apeUsu) {
-			super();
-			this.codUsu = codUsu;
-			this.codTipoUsu = codTipoUsu;
-			this.email = email;
-			this.contraseña = contraseña;
-			this.nomUsu = nomUsu;
-			this.apeUsu = apeUsu;
-		}
+	
 		
 		public usuarioDTO() {
 			super();
