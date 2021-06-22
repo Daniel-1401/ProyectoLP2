@@ -10,6 +10,9 @@ import util.conexionBD;
 
 public class MySQLUsuarioDAO implements usuarioDAO {
 
+	
+	
+	// REGISTRAR USUARIO
 	@Override
 	public int registrar(usuarioDTO u) {
 int rs = 0;
@@ -27,7 +30,7 @@ int rs = 0;
 			
 			pst.setString(1, u.getCodUsu());
 			pst.setInt(2, u.getCodTipoUsu());
-			pst.setString(3,u.getEmail());
+			pst.setString(3, u.getEmail());
 			pst.setString(4, u.getContraseña());
 			pst.setString(5, u.getNomUsu());
 			pst.setString(6, u.getApeUsu());
@@ -43,6 +46,7 @@ int rs = 0;
 		return rs;
 	}
 
+	// VALIDAR 
 	@Override
 	public usuarioDTO validar(String usuario, String clave) {
 		usuarioDTO u = null;
