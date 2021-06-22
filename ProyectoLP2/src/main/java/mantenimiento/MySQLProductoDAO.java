@@ -3,14 +3,14 @@ package mantenimiento;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-import beans.productoDTO;
+import beans.listarproductoDTO;
 import interfaces.productoDAO;
 import util.conexionBD;
 
 public class MySQLProductoDAO implements productoDAO {
 
 	@Override
-	public int registrar(productoDTO prod) {
+	public int registrar(listarproductoDTO prod) {
 		int rlst = 0;
 		Connection con = null;
 		PreparedStatement pst = null;
@@ -37,13 +37,13 @@ public class MySQLProductoDAO implements productoDAO {
 	}
 
 	@Override
-	public int actualizar(productoDTO prod) {
+	public int actualizar(listarproductoDTO prod) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int eliminar(productoDTO prod) {
+	public int eliminar(listarproductoDTO prod) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

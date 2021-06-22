@@ -5,15 +5,15 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import beans.productoDTO;
+import beans.listarproductoDTO;
 import interfaces.administradorDAO;
 import util.conexionBD;
 
 public class MySQLAdministradorDAO implements administradorDAO {
 
 	@Override
-	public ArrayList<productoDTO> listarProd() {
-		ArrayList<productoDTO> listaProd = new ArrayList<productoDTO>();
+	public ArrayList<listarproductoDTO> listarProd() {
+		ArrayList<listarproductoDTO> listaProd = new ArrayList<listarproductoDTO>();
 		Connection con = null;
 		PreparedStatement pst = null;
 		ResultSet rst = null;
@@ -24,7 +24,7 @@ public class MySQLAdministradorDAO implements administradorDAO {
 			pst = con.prepareStatement(sql);
 			rst = pst.executeQuery();
 			while (rst.next()) {
-				productoDTO prod = new productoDTO(rst.getString(1),
+				listarproductoDTO prod = new listarproductoDTO(rst.getString(1),
 													rst.getString(2),
 													rst.getString(3),
 													rst.getString(4),
