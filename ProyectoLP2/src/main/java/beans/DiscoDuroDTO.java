@@ -2,8 +2,8 @@ package beans;
 
 public class DiscoDuroDTO {
 	
-	public int codDD;
-	public String codMarca, capacidad, codTipoDD;
+	public int codDD,codTipoDD,codMarca;
+	public String capacidad;
 	
 	public int getCodDD() {
 		return codDD;
@@ -13,11 +13,11 @@ public class DiscoDuroDTO {
 		this.codDD = codDD;
 	}
 
-	public String getCodMarca() {
+	public int getCodMarca() {
 		return codMarca;
 	}
 
-	public void setCodMarca(String codMarca) {
+	public void setCodMarca(int codMarca) {
 		this.codMarca = codMarca;
 	}
 
@@ -29,15 +29,15 @@ public class DiscoDuroDTO {
 		this.capacidad = capacidad;
 	}
 
-	public String getCodTipoDD() {
+	public int getCodTipoDD() {
 		return codTipoDD;
 	}
 
-	public void setCodTipoDD(String codTipoDD) {
+	public void setCodTipoDD(int codTipoDD) {
 		this.codTipoDD = codTipoDD;
 	}
 
-	public DiscoDuroDTO(int codDD, String codMarca, String capacidad, String codTipoDD) {
+	public DiscoDuroDTO(int codDD, int codMarca, String capacidad, int codTipoDD) {
 		super();
 		this.codDD = codDD;
 		this.codMarca = codMarca;
