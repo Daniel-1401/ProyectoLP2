@@ -146,8 +146,6 @@ public class UsuarioServlet extends HttpServlet {
 		//response.sendRedirect(url);
 		//para la salida de atributos es con este request
 		request.getRequestDispatcher(url).forward(request, response);
-		
-	
 	}
 		
 
