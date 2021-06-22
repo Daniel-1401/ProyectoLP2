@@ -137,3 +137,90 @@ BEGIN
     INNER JOIN imagenesProducto		img ON prod.codProducto=img.codProducto;
 END$$
 
+-- EJECUTAMOS USP_INSERTAPRODUCTO
+call usp_insertaproducto('PRO01','Laptop LENOVO-RAYO','MAR02','Gamer','CPU01','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',900);
+call usp_insertaproducto('PRO02','Laptop HP-PAVILION','MAR03','Gamer X4','CPU02','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',789);
+call usp_insertaproducto('PRO03','Laptop SONY','MAR04','Gamer X904','CPU01','PANTALLA TACTIL','DIS01','GPU02','CAT03','SIS01',989);
+select * from tb_produtcto;
+
+
+
+-- PROCEDUR QUE VALIDA ACCESO
+DELIMiTER $$
+create  procedure usp_validaAcceso (usr char(45), pas char(20))
+begin
+select * from tb_usuarios where email = usr and contraseña = pas;
+end$$
+DELIMiTER ;
+
+
+-- PROCEDURE  PARA COMBOX
+show tables;
+
+-- CPU
+DELIMiTER $$
+create procedure listacpu()
+begin
+select codCPU,nombreCPU
+from tb_cpu;
+end$$
+DELIMiTER ;
+
+call listacpu
+
+-- GPU
+DELIMiTER $$
+create procedure listagpu()
+begin
+select codGPU,nombre
+from tb_gpu;
+end$$
+DELIMiTER ;
+
+call listacpu;
+
+-- SISTEMA OPERATTIVO
+DELIMiTER $$
+create procedure listaSistemaOperativo()
+begin
+select codSistemaOperativo,nombre
+from tb_sistemaoperativo;
+end$$
+DELIMiTER ;
+
+-- DISCO DURO
+DELIMiTER $$
+create procedure listaDiscoDuro()
+begin
+select codDiscoDuro,capacidad
+from tb_discoduro;
+end$$
+DELIMiTER ;
+
+call listaDiscoDuro
+
+
+-- CATEGORIA
+DELIMiTER $$
+create procedure listaCategoria()
+begin
+select codCategoria,nombreCategoria
+from tb_categoria;
+end$$
+DELIMiTER ;
+
+call listacategoria
+
+nombre , codigo marca , capacidad
+-- MARCA
+DELIMiTER $$
+create procedure listaMARCAXCAPACIDAD()
+begin
+select   d.codMarca,nombreMarca , capacidad
+from tb_marca t
+inner join tb_discoduro d
+on t.codMarca = d.codMarca;
+end$$
+DELIMiTER ;
+
+call  listaMARCAXCAPACIDAD
