@@ -1,8 +1,11 @@
 package DAO;
 
+import interfaces.DiscoDuroDAO;
 import interfaces.administradorDAO;
 import interfaces.carritoDAO;
 import interfaces.categoriaDAO;
+import interfaces.ciudadDAO;
+import interfaces.cpuDAO;
 import interfaces.facturaDAO;
 import interfaces.marcaDAO;
 import interfaces.productoDAO;
@@ -18,6 +21,9 @@ public abstract class DAOFactory {
 	public abstract marcaDAO			getMarcaDAO();
 	public abstract productoDAO			getProductoDAO();
 	public abstract usuarioDAO			getUsuarioDAO();
+	public abstract ciudadDAO			getCiudadDAO();
+	public abstract cpuDAO				getCpuDAO();
+	public abstract DiscoDuroDAO		getDiscoDuroDAO();
 	
 	public static DAOFactory getDaoFactory(int bd) {
 		switch (bd) {

@@ -1,8 +1,11 @@
 package DAO;
 
+import interfaces.DiscoDuroDAO;
 import interfaces.administradorDAO;
 import interfaces.carritoDAO;
 import interfaces.categoriaDAO;
+import interfaces.ciudadDAO;
+import interfaces.cpuDAO;
 import interfaces.facturaDAO;
 import interfaces.marcaDAO;
 import interfaces.productoDAO;
@@ -14,6 +17,9 @@ import mantenimiento.MySQLFacturaDAO;
 import mantenimiento.MySQLMarcaDAO;
 import mantenimiento.MySQLProductoDAO;
 import mantenimiento.MySQLUsuarioDAO;
+import mantenimiento.MySQLCiudadDAO;
+import mantenimiento.MySQLCpuDAO;
+import mantenimiento.MySQLDiscoDuroDAO;
 
 public class MySQLDAOFactory extends DAOFactory{
 
@@ -57,6 +63,24 @@ public class MySQLDAOFactory extends DAOFactory{
 	public usuarioDAO getUsuarioDAO() {
 		// TODO Auto-generated method stub
 		return new MySQLUsuarioDAO();
+	}
+
+	@Override
+	public ciudadDAO getCiudadDAO() {
+		// TODO Auto-generated method stub
+		return new MySQLCiudadDAO();
+	}
+
+	@Override
+	public cpuDAO getCpuDAO() {
+		// TODO Auto-generated method stub
+		return new MySQLCpuDAO();
+	}
+
+	@Override
+	public DiscoDuroDAO getDiscoDuroDAO() {
+		// TODO Auto-generated method stub
+		return new MySQLDiscoDuroDAO();
 	}
 
 	

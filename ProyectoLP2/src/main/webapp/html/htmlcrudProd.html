@@ -4,22 +4,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<!-- Popper JS -->
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script
-src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/header.css">
+
+
 </head>
 <body>
 <div id="contenedor">
@@ -61,7 +54,9 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></scri
                 <li><a href="us">Cerrar sesion</a></li>			
             </ul>
         </nav>
-        <section style="width: 65%;float: left;">
+        
+        
+        <section style="width: 35%;float: left;">
             <h2>Mantenimiento de Productos</h2>
     <form action="prod" method="post">
         <div class="form-group">
@@ -112,11 +107,28 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></scri
                 </form>   
             </p>  
         <p></p>
-        <button type="button" class="btn btn-info" 		name="opcion" value="r">Registrar</button>
-        <button type="button" class="btn btn-primary" 	name="opcion" value="a">Actualizar</button>
-        <button type="button" class="btn btn-danger" 	name="opcion" value="e">Eliminar</button>
-        <button type="button" class="btn btn-warning" 	name="opcion" value="l">Listado</button>
+        
+        <div class="btn">
+                <button type="button"  name="opcion" value="r">Registrar</button>
+        </div>
+   
+   		<div class="btn">
+        <button type="button" 		name="opcion" value="r">Registrar</button>
+        </div>
+        
+        <div class="btn">
+        <button type="button" 	name="opcion" value="a">Actualizar</button>
+        </div>
+        
+        <div class="btn">
+        <button type="button"  	name="opcion" value="e">Eliminar</button>
+        </div>
+        
+        <div class="btn">
+        <button type="button"  	name="opcion" value="l">Listado</button>
+    	</div>
     </form>
+   
                
     </main>
     <footer>

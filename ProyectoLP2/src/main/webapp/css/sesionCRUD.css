@@ -95,10 +95,3 @@ main{
     
     list-style: none;
 }
-.contenido{
-    display: flex;
-}
-.contenido label{
-    margin: auto;
-    font-size: 100px;
-}

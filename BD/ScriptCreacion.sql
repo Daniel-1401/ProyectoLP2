@@ -20,17 +20,6 @@ USE `ciberimpacto` ;
 
 
 -- -----------------------------------------------------
--- Table `ciberimpacto`.`imagenPrueba`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ciberimpacto`.`imagenPrueba` (
-  `codImagen` 	INT         NOT NULL,
-  `nombre` 		  VARCHAR(50) NULL,
-  `imagen` 		  LONGBLOB    NULL,
-  PRIMARY KEY (`codImagen`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `ciberimpacto`.`tb_marca`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_marca` (
@@ -337,27 +326,21 @@ CREATE TABLE IF NOT EXISTS `ciberimpacto`.`tb_DetalleFactura` (
 ENGINE = InnoDB;
 
 
-Select * from `ciberimpacto`.`tb_producto`;
-
-Create procedure ListarProductos()
-Select * from tb_producto;
-call ciberimpacto.ListarProductos();
-
-DELIMITER $$
-Create procedure AgregarProducto(
-IN cod_prod 		varchar(5),
-IN modelo_prod		varchar(45),
-IN cod_cate			int,
-IN cod_marca		int,
-IN descrip			varchar(15),
-IN cod_CPU			int,
-IN cod_GPU			int,
-IN cod_DiscoD		int,
-IN cod_SO			int,
-IN precioV			decimal(7,2))
-Begin
-Insert into tb_producto(codProducto, modeloProducto, codCategoria, codMarca, descripcionPantalla, codCPU, codGPU, codDiscoDuro, codSistemaOperativo, precioVenta) values (cod_prod, modelo_prod, cod_cate, cod_marca, descrip, cod_CPU, cod_GPU, cod_DiscoD, cod_SO, precioV);
-End;
+-- -----------------------------------------------------
+-- Table `ciberimpacto`.`imagenPrueba`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ciberimpacto`.`imagenesProducto` (
+  `codProducto` VARCHAR(5) NOT NULL,
+  `codImagen` INT NOT NULL,
+  `imagen` LONGBLOB NOT NULL,
+  PRIMARY KEY (`codProducto`, `codImagen`),
+  CONSTRAINT `fk_tbImagenProducto_tbProducto:codProducto`
+    FOREIGN KEY (`codProducto`)
+    REFERENCES `ciberimpacto`.`tb_producto` (`codProducto`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
