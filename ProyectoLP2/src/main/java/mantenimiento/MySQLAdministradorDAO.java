@@ -24,16 +24,15 @@ public class MySQLAdministradorDAO implements administradorDAO {
 			pst = con.prepareStatement(sql);
 			rst = pst.executeQuery();
 			while (rst.next()) {
-				listarproductoDTO prod = new listarproductoDTO(rst.getString(1),
-													rst.getString(2),
-													rst.getString(3),
-													rst.getString(4),
-													rst.getString(5),
-													rst.getString(6),
-													rst.getString(7),
-													rst.getString(8),
-													rst.getString(9),
-													rst.getDouble(10));
+				listarproductoDTO prod = new listarproductoDTO(	rst.getString(1),
+																rst.getString(2),
+																rst.getString(3),
+																rst.getString(4),
+																rst.getString(5),
+																rst.getString(6),
+																rst.getString(7),
+																rst.getString(8),
+																rst.getDouble(9));
 				listaProd.add(prod);
 			}
 		}catch (Exception e) {
