@@ -2,9 +2,7 @@ package beans;
 
 public class listarproductoDTO {
 	
-	public String 	codProd, modelProd,desProd;
-	
-	public String  codCategoria, codMarca, codCPU, codGPU, codDD, codSO;
+	public String 	codigo, modelo ,categoria, marca, procesador, tarjetaGrafica, almacenamiento, sistemaOperativo;
 	
 	public double precioV;
 	
