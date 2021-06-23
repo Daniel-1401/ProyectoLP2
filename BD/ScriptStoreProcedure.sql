@@ -1,7 +1,7 @@
 -- ---PROCEDURES-----
 USE ciberimpacto;
 
--- USUAEIO
+-- USUARIO
 DELIMITER $$
 create procedure sp_insertar_registro_usuario
 	(
@@ -34,7 +34,7 @@ DELIMITER $$
 CREATE PROCEDURE sp_update_registro_usuario
 	(
 		codUsuario						VARCHAR(5),
-		codTipoDocumento			 	INT,
+		codTipoDocumento			 	VARCHAR(45),
 		numeroDocumento			 		VARCHAR(9),
 		numeroTelefonico			 	VARCHAR(9),
 		codPais			 			    VARCHAR(2),
@@ -59,18 +59,17 @@ END$$
 DELIMITER $$
 create procedure sp_insertar_producto
 	(
-		codProducto				VARCHAR(5)  ,
-		modeloProducto			VARCHAR(45) ,
-		codCategoria		 	INT         ,
-		codMarca		 		INT         ,
-		descripcionPantalla		VARCHAR(15) ,
-		codCPU		 			INT         ,
-		codGPU		 			INT         ,
-		codDiscoDuro		 	INT         ,
-		codSistemaOperativo		INT         ,
-		precioVenta		 		DECIMAL(7,2),
-        codimagen				int			,
-        imagen					LONGBLOB
+		codProducto				VARCHAR(5),
+		modeloProducto			VARCHAR(45),
+		Categoria		 	VARCHAR(45),
+		Marca		 		VARCHAR(45),
+		descripcionPantalla		VARCHAR(15),
+		CPUU		 			VARCHAR(45),
+		GPU		 			VARCHAR(45),
+		DiscoDuro		 	VARCHAR(45),
+		SistemaOperativo		VARCHAR(45),
+		precioVenta		 		DECIMAL(7,2)
+--        imagen					LONGBLOB
 )
 BEGIN
 	INSERT INTO tb_producto
@@ -99,35 +98,37 @@ BEGIN
 		codSistemaOperativo,
 		precioVenta
 	);
+    /*
     INSERT INTO imagenesProducto
     (
 		codProducto,
-        codImagen,
         imagen
     )
     VALUES
     (
 		codProducto,
-        codimagen,
         imagen
-    );
+    );*/
 END$$
 
 DELIMITER $$
 CREATE PROCEDURE sp_listarProducto()
 BEGIN
 	SELECT 
-			prod.codProducto						 AS `Codigo`,
-            prod.modeloProducto						 AS `Modelo`,
-            cat.nombreCategoria						 AS `Categoria`,
-            mar.nombreMarca							 AS `Marca`,
-            CONCAT(cp.nombreCPU,' ',cp.modeloCPU)	 AS `Procesador`,
-            CONCAT(gpu.nombre,' ',gpu.capacidad)	 AS `Tarjeta Grafica`,
-            CONCAT(tds.nombreTipo,' ',dsc.capacidad) AS `Almacenamiento`,
-            stm.nombre								 AS `Sistema operativo`,
-            img.imagen								 AS `imagen`
-    FROM tb_producto prod
-    INNER JOIN tb_categoria 		cat ON prod.codCategoria=cat.codCategoria
+			*
+			/*prod.codProducto,
+            prod.modeloProducto,
+            prod.codCategoria,
+            prod.codMarca,
+            prod.descripcionPantalla,
+            prod.codCPU,
+            prod.codGPU,
+            prod.discoDuro,
+            prodSistemaOperativo,
+            prod.precioVenta*/
+            -- img.imagen								 AS `imagen`
+    FROM tb_producto prod;
+    /*INNER JOIN tb_categoria 		cat ON prod.codCategoria=cat.codCategoria
     INNER JOIN tb_marca				mar ON prod.codMarca=mar.codMarca
     INNER JOIN tb_CPU				cp  ON prod.codCPU=cp.codCPU
     INNER JOIN tb_GPU				gpu ON prod.codGPU=gpu.codGPU
@@ -135,13 +136,14 @@ BEGIN
     INNER JOIN tb_tipoDiscoDuro 	tds ON dsc.codTipoDiscoDuro=tds.codTipoDiscoDuro
     INNER JOIN tb_SistemaOperativo 	stm ON prod.codSistemaOperativo=stm.codSistemaOperativo
 	INNER JOIN imagenesProducto		img ON prod.codProducto=img.codProducto;
+*/
 END$$
 
 -- EJECUTAMOS USP_INSERTAPRODUCTO
-call usp_insertaproducto('PRO01','Laptop LENOVO-RAYO','MAR02','Gamer','CPU01','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',900);
-call usp_insertaproducto('PRO02','Laptop HP-PAVILION','MAR03','Gamer X4','CPU02','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',789);
-call usp_insertaproducto('PRO03','Laptop SONY','MAR04','Gamer X904','CPU01','PANTALLA TACTIL','DIS01','GPU02','CAT03','SIS01',989);
-select * from tb_produtcto;
+-- call usp_insertaproducto('PRO01','Laptop LENOVO-RAYO','MAR02','Gamer','CPU01','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',900);
+-- call usp_insertaproducto('PRO02','Laptop HP-PAVILION','MAR03','Gamer X4','CPU02','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',789);
+--  call usp_insertaproducto('PRO03','Laptop SONY','MAR04','Gamer X904','CPU01','PANTALLA TACTIL','DIS01','GPU02','CAT03','SIS01',989);
+-- select * from tb_produtcto;
 
 
 

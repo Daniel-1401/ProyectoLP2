@@ -125,7 +125,7 @@
                         <div class="form-group">
                             <label for="exampleInputPantalla1">Pantalla :</label> <input
                                 type="text" class="form-control" id="exampleInputoantalla"
-                                placeholder="Ingrese descripcion de pantalla" name="txtPantalla">
+                                placeholder="Ingrese descripcion de pantalla" name="txtDescripcionPantalla">
                         </div>
                         <div class="columnas">
                             <div class="form-group">
@@ -155,7 +155,7 @@
                             <div class="form-group">
                                 <label for="exampleFormControlSelect4">Almacenamiento :</label>
                                 <div class="form-group">
-                                    <select name="cboGPU" class="form-control" >
+                                    <select name="cboAlmacenamiento" class="form-control" >
                                         <option value="">Seleccionar</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
@@ -171,17 +171,6 @@
                                         <option value="">1</option>
                                         <option value="">2</option>
                                         <option value="">3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect4">Sistema Operativo :</label>
-                                <div class="form-group">
-                                    <select name="cboSistemaOperativo" class="form-control" >
-                                        <option value="-1">Seleccionar</option>
-                                        <option value="1">BLABLABLABLABLABLABLA</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
                                     </select>
                                 </div>
                             </div>
@@ -191,7 +180,7 @@
                             <input type="file" class="form-control" id="exampleInputimagen" placeholder="Seleccione imagen" name="txtImagen">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary" name="opcion" value="aï¿½adirProducto">Aï¿½adir</button>
+                        <button type="submit" class="btn btn-primary" name="opcion" value="añadirProducto">Añadir</button>
                     </form>
                 </section>
 			</div>

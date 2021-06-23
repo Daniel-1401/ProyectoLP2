@@ -63,12 +63,12 @@ insert into tb_sistemaoperativo values (01,'WINDOWS 10');
 Insert into tb_SistemaOperativo values (02,'MAC OS');
 
 -- TB_PRODUCTO
-Insert into tb_producto values ('P0001','GP65 LEOPARD 10SEK',01,04,'15.6 pulgadas',01,03,05,01,7699.59);
-Insert into tb_producto values ('P0002','ZENBOOK DUO'       ,02,11,'14 pulgadas'  ,03,02,02,01,7999.99);
-Insert into tb_producto values ('P0003','PAVILION GAMING'   ,01,02,'15.6 pulgadas',06,05,04,01,4199.29);
-Insert into tb_producto values ('P0004','VOSTRO 3400'       ,03,03,'14 pulgadas'  ,02,04,02,01,3259.00);
-Insert into tb_producto values ('P0005','MATEBOOK X PRO'    ,04,05,'13.9 pulgadas',01,03,06,01,5799.99);
-Insert into tb_producto values ('P0006','AIR'               ,04,12,'13 pulgadas'  ,10,09,08,02,5199.79);
+Insert into tb_producto values ('P0001','GP65 LEOPARD 10SEK','Categoria1','Marca1','15.6 pulgadas','GPU1','GPU1','Disco1','Sistema1',7699.59);
+Insert into tb_producto values ('P0002','ZENBOOK DUO'       ,'Categoria1','Marca1','14 pulgadas'  ,'GPU1','GPU1','Disco1','Sistema1',7999.99);
+Insert into tb_producto values ('P0003','PAVILION GAMING'   ,'Categoria1','Marca1','15.6 pulgadas','GPU1','GPU1','Disco1','Sistema1',4199.29);
+Insert into tb_producto values ('P0004','VOSTRO 3400'       ,'Categoria1','Marca1','14 pulgadas'  ,'GPU1','GPU1','Disco1','Sistema1',3259.00);
+Insert into tb_producto values ('P0005','MATEBOOK X PRO'    ,'Categoria1','Marca1','13.9 pulgadas','GPU1','GPU1','Disco1','Sistema1',5799.99);
+Insert into tb_producto values ('P0006','AIR'               ,'Categoria1','Marca1','13 pulgadas'  ,'GPU1','GPU1','Disco1','Sistema1',5199.79);
 
 -- TB_TIPOUSUARIO
 Insert into tb_TipoUsuario values (1,'Administrador');
