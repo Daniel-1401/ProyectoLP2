@@ -19,6 +19,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import DAO.DAOFactory;
+import beans.productosDTO;
 import interfaces.productoDAO;
 import mantenimiento.MySQLProductoDAO;
 
@@ -81,9 +82,31 @@ public class productoServlet extends HttpServlet {
 		
 
 		private void añadirProducto(HttpServletRequest request, HttpServletResponse response) {
-			String 	codigoProducto = request.getParameter("txtCodigoProducto");
-			String 	modeloProducto = request.getParameter("txtModeloProducto");
-			String	codCategoria   = request.getParameter("cboCategoria");
+			String 	codigoProducto   = request.getParameter("txtCodigoProducto");
+			String 	modeloProducto   = request.getParameter("txtModeloProducto");
+			String	Categoria        = request.getParameter("cboCategoria");
+			String  Marca		     = request.getParameter("cboMarca");
+			String	DescrpPantalla   = request.getParameter("txtDescripcionPantalla");
+			String	cpu			     = request.getParameter("cboCPU");
+			String	gpu			     = request.getParameter("cboGPU");
+			String	discoDuro        = request.getParameter("cboAlmacenamiento");
+			String	SistemaOperativo = request.getParameter("cboSistemaOperativo");
+			Double	precio 			 = Double.parseDouble(request.getParameter("txtPrecioProducto"));
+			
+			productosDTO prodNew = new productosDTO();
+			prodNew.setCodigoProducto(codigoProducto);
+			prodNew.setModeloProducto(modeloProducto);
+			prodNew.setCategoria(Categoria);
+			prodNew.setMarca(Marca);
+			prodNew.setDescripcionPantalla(SistemaOperativo);
+			prodNew.setCpu(cpu);
+			prodNew.setGpu(gpu);
+			prodNew.setDiscoDuro(discoDuro);
+			prodNew.setSistemaOperativo(SistemaOperativo);
+			prodNew.setPrecioVenta(precio);
+			
+			DAOFactory fabrica = DAOFactory.getDaoFactory(DAOFactory.MYSQL);
+			
 			
 //			ArrayList<String> lista = new ArrayList<>();
 //			insertProductoDTO p = new insertProductoDTO();

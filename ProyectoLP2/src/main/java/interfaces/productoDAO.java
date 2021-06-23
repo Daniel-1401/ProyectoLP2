@@ -9,6 +9,6 @@ public interface productoDAO {
 	
 	public int actualizar (productosDTO prod);
 	
-	public int eliminar (productosDTO prod);
+	public int eliminar (String codigo);
 	
 }

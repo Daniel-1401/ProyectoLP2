@@ -176,11 +176,12 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputCodigo1">Imagen :</label> 
-                            <input type="file" class="form-control" id="exampleInputimagen" placeholder="Seleccione imagen" name="txtImagen">
+                            <label for="exampleInputCodigo1">Precio :</label> 
+                            <input type="number" class="form-control" id="exampleInputcodigo"
+                                placeholder="Ingrese precio del producto" name="txtPrecioProducto">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary" name="opcion" value="añadirProducto">Añadir</button>
+                        <button type="submit" class="btn btn-primary" name="opcion" value="aï¿½adirProducto">Aï¿½adir</button>
                     </form>
                 </section>
 			</div>
