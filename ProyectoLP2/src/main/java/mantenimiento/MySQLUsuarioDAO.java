@@ -31,7 +31,7 @@ int rs = 0;
 			pst.setString(1, u.getCodUsu());
 			pst.setInt(2, u.getCodTipoUsu());
 			pst.setString(3, u.getEmail());
-			pst.setString(4, u.getContraseña());
+			pst.setString(4, u.getContraseï¿½a());
 			pst.setString(5, u.getNomUsu());
 			pst.setString(6, u.getApeUsu());
 			
@@ -39,18 +39,16 @@ int rs = 0;
 			
 		} catch (Exception e) {
 			//mensaje  de error
-			System.out.println("Error al Registrar Usuario A LA BASE DE DATOS"+e.getMessage());
+			System.out.println("Error al Registrar Usuario"+e.getMessage());
 		}finally {
 			conexionBD.closeConexion(con);
 		}
 		return rs;
 	}
 
-	// VALIDAR 
 	@Override
 	public usuarioDTO validar(String usuario, String clave) {
 		usuarioDTO u = null;
-		//PLANTILLA
 		
 		Connection con= null;
 		PreparedStatement pst= null;
@@ -78,7 +76,7 @@ int rs = 0;
 				
 			} 
 			}catch(Exception e) {
-				System.out.print("Error al logearse"+ e.getMessage());
+				System.out.print("Ocurrio un error al ingresar."+ e.getMessage());
 				
 			} finally {
 				conexionBD.closeConexion(con);
