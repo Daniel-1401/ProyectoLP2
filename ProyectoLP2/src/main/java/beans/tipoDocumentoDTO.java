@@ -2,13 +2,14 @@ package beans;
 
 public class tipoDocumentoDTO {
 	
-	public String codTipoDoc, nomTipoDoc;
+	public int codTipoDoc;
+	public String nomTipoDoc;
 
-	public String getCodTipoDoc() {
+	public int getCodTipoDoc() {
 		return codTipoDoc;
 	}
 
-	public void setCodTipoDoc(String codTipoDoc) {
+	public void setCodTipoDoc(int codTipoDoc) {
 		this.codTipoDoc = codTipoDoc;
 	}
 
@@ -20,7 +21,7 @@ public class tipoDocumentoDTO {
 		this.nomTipoDoc = nomTipoDoc;
 	}
 
-	public tipoDocumentoDTO(String codTipoDoc, String nomTipoDoc) {
+	public tipoDocumentoDTO(int codTipoDoc, String nomTipoDoc) {
 		super();
 		this.codTipoDoc = codTipoDoc;
 		this.nomTipoDoc = nomTipoDoc;
@@ -29,8 +30,6 @@ public class tipoDocumentoDTO {
 	public tipoDocumentoDTO() {
 		super();
 	}
-	
-	
-	
+
 
 }

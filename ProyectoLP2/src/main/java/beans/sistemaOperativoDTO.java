@@ -2,13 +2,14 @@ package beans;
 
 public class sistemaOperativoDTO {
 
-	public String codSO, nomSO;
+	public int codSO;
+	public String nomSO;
 
-	public String getCodSO() {
+	public int getCodSO() {
 		return codSO;
 	}
 
-	public void setCodSO(String codSO) {
+	public void setCodSO(int codSO) {
 		this.codSO = codSO;
 	}
 
@@ -20,7 +21,7 @@ public class sistemaOperativoDTO {
 		this.nomSO = nomSO;
 	}
 
-	public sistemaOperativoDTO(String codSO, String nomSO) {
+	public sistemaOperativoDTO(int codSO, String nomSO) {
 		super();
 		this.codSO = codSO;
 		this.nomSO = nomSO;

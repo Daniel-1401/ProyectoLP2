@@ -31,7 +31,7 @@ public class MySQLDiscoDuroDAO implements DiscoDuroDAO{
 				listarDD.add(dd);
 			}
 		} catch (Exception e) {
-			System.out.println("Error al listar clientes:" + e.getMessage());
+			System.out.println("Error al listar disco duro:" + e.getMessage());
 		}finally {
 			conexionBD.closeConexion(con);
 		}

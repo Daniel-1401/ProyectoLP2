@@ -6,34 +6,35 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 import beans.marcaDTO;
-import interfaces.marcaDAO;
+import beans.paisDTO;
+import interfaces.paisDAO;
 import util.conexionBD;
 
-public class MySQLMarcaDAO implements marcaDAO {
+public class MySQLPaisDAO implements paisDAO{
 
 	@Override
-	public ArrayList<marcaDTO> listarMarca() {
-		ArrayList<marcaDTO> lstmarca = new ArrayList<marcaDTO>();
+	public ArrayList<paisDTO> listarPais() {
+		ArrayList<paisDTO> lstpais = new ArrayList<paisDTO>();
 		Connection con = null;
 		PreparedStatement pst = null;
 		ResultSet rst = null;
 		try {
 			con = conexionBD.getConexion();
-			String sql = "Select * from tb_marca";
+			String sql = "Select * from tb_pais";
 			pst = con.prepareStatement(sql);
 			rst = pst.executeQuery();
 			
 			while (rst.next()) {
-				marcaDTO marca = new marcaDTO(rst.getInt(1),
-												rst.getString(2));
-				lstmarca.add(marca);
+				paisDTO marca = new paisDTO(rst.getInt(1),
+											rst.getString(2));
+				lstpais.add(marca);
 			}
 			
 		} catch (Exception e) {
-			System.out.println("Error al listar marcas:" + e.getMessage());
+			System.out.println("Error al listar pais:" + e.getMessage());
 		}finally {
 			conexionBD.closeConexion(con);
 		}
-		return lstmarca;
+		return lstpais;
 	}
 }
