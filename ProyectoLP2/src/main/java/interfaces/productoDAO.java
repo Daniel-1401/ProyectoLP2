@@ -1,6 +1,8 @@
 package interfaces;
 
 
+import java.util.ArrayList;
+
 import beans.productosDTO;
 
 public interface productoDAO {
@@ -10,5 +12,7 @@ public interface productoDAO {
 	public int actualizar (productosDTO prod);
 	
 	public int eliminar (String codigo);
+	
+	ArrayList<productosDTO> listarProd();
 	
 }
