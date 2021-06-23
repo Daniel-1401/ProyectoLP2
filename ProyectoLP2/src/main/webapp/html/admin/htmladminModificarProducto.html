@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../../css/cssPagAdmin/GeneralCRUD.css">
     <link rel="stylesheet" href="../../css/cssPagAdmin/crudActualizar.css">
     <link rel="stylesheet" href="../../css/cssPagAdmin/crudEliminar.css">
+    <link rel="stylesheet" href="../../css/cssPagAdmin/crudModificar.css">
     
 </head>
 <body>
@@ -96,44 +97,67 @@
             <div class="contenido">
                 <div class="container">
                   <table class="table table-hover" id="myTable">
-					
+                  
+					<div class="titulo">
 					<h2>Modificar Producto</h2>
-					
-					<label>Codigo del producto:
-					<input type="search" class="buscarproducto" placeholder="" aria-controls="myTable"/>
-					</label>
-										
-					
-					<label>Descripcion del producto:
-					
-
-					
-					
-					
-								
-					</label>
-										
-					
-					
-					<label>Nuevo precio:
-					<input type="search" class="nuevoprecio" placeholder="" aria-controls="myTable"/>
-					</label>
-					
-					<label>Stock actual:
-					<input type="search" class="stockactual" placeholder="" aria-controls="myTable"/>
-					</label>
-					
-                    <label>Nuevo stock:
-					<input type="search" class="stocknuevo" placeholder="" aria-controls="myTable"/>
-					</label>
-					
-					
+					</div>
+			</br>
+			
+<div class="contenedorformulario">			
+	<div clas="formulario">
+	<form class="row g-3">
+  		<div class="col-md-4">
+    <label for="validationServer01" class="form-label">Codigo de producto:</label>
+    <input type="text" class="form-control" id="validationServer01" value="" required>
+    <div class="valid-feedback">
+      Completo
+    	</div>
+  </div>
+  
+  
+  
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Descripcion del producto:</label>
+    <div class="descripcionprod">
+    	 <p>$Descripcion$</p>
+	</div>	
+  </div>
+  
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">Nuevo precio:</label>
+    <input type="text" class="form-control" id="validationServer01" value="" required>
+    <div class="valid-feedback">
+      Completo
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">Stock actual:</label>
+    <input type="text" class="form-control" id="validationServer01" value="" required>
+    <div class="valid-feedback">
+      Completo
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">Nuevo stock:</label>
+    <input type="text" class="form-control" id="validationServer01" value="" required>
+    <div class="valid-feedback">
+      Completo
+    </div>
+  </div>
+  </br>
+  
 					<div class="botonesModal d-grid gap-2 d-md-block">
                          <button class="btn btn-primary" type="button">Aceptar</button>
                                       
                          <button class="btn btn-primary" type="button">Cancelar</button>
-                    </div>
-                    
+                    </div> 
+                    </br>
+  
+</form>
+</div>
+</div>
                   </table>
                   
                 </div>
