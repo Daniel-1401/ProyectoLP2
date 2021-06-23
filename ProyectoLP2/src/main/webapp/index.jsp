@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+  
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -161,12 +163,15 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Laptops
                     </a>
+                    <select name="cboCat" class="">
+                    <tools:combo/>
+                    </select>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Laptops Gamer</a></li>
                       <li><a class="dropdown-item" href="#">Laptops Diseño</a></li>
                       <li><a class="dropdown-item" href="#">Laptops Trabajo</a></li>
                       <li><a class="dropdown-item" href="#">Notebooks</a></li>
-                    </ul>
+                    </ul> 
                   </li>
                 </ul>
               </div>
