@@ -21,7 +21,7 @@
 <body>
     <header class="encabezado">
         <div class="logo">
-            <a href="htmlindex.html">
+            <a href="index.jsp">
                 <img class="imgLogo" src="img/logo.png" alt="Imagenlogo">
             </a>
         </div>
@@ -144,7 +144,7 @@
                         </li>
                       </ul>
                       <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="button">Button</button>
+                        <button class="btn btn-primary" type="button"><a href="compraProducto.jsp">COMPRAR</a></button>
                       </div>
                 </ul>
               </div>
@@ -164,7 +164,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Laptops Gamer</a></li>
-                      <li><a class="dropdown-item" href="#">Laptops Diseï¿½o</a></li>
+                      <li><a class="dropdown-item" href="#">Laptops Diseño</a></li>
                       <li><a class="dropdown-item" href="#">Laptops Trabajo</a></li>
                       <li><a class="dropdown-item" href="#">Notebooks</a></li>
                     </ul>
@@ -241,7 +241,9 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info">
+                                	<a href="infoProducto.jsp">info</a>
+                                </button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
@@ -261,7 +263,9 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info">
+                                	<a href="infoProducto.jsp">info</a>
+                                </button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
@@ -281,7 +285,9 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info">
+                                	<a href="infoProducto.jsp">info</a>
+                                </button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
@@ -301,7 +307,9 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info">
+                                	<a href="infoProducto.jsp">info</a>
+                                </button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
@@ -321,11 +329,14 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info">
+                                	<a href="infoProducto.jsp">info</a>
+                                </button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -333,7 +344,7 @@
     <footer>
         <div class="pieDePagina">
             <div>
-                <p>ï¿½2021 - Grupo Bombastic</p>
+                <p>2021 - Grupo Bombastic</p>
             </div> 
             <div>
                 <img src="img/iconVisa.png" alt="">

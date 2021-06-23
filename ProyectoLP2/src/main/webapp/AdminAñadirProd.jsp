@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/cssPagAdmin/GeneralCRUD.css">
-    <link rel="stylesheet" href="css/cssPagAdmin/crudAï¿½adir.css">
+    <link rel="stylesheet" href="css/cssPagAdmin/crudAñadir.css">
 </head>
 <body>
 	<main>
@@ -53,7 +53,7 @@
 								class="accordion-collapse collapse show"
 								aria-labelledby="panelsStayOpen-headingOne">
 								<div class="accordion-body ">
-									<li><a href="">Aï¿½adir</a></li>
+									<li><a href="">Añadir</a></li>
 								</div>
 								
 								<div class="accordion-body">
@@ -87,7 +87,7 @@
 			<div class="contenidoPrincipal">
 				<section style="width: 65%;float: left;">
                     <h2>Añadir nuevo producto de cuenta</h2>
-                    <form action="prodServ" method="post" enctype="multipart/form-data">
+                    <form action="prodServ" method="post">
                         <div class="form-group">
                             <label for="exampleInputCodigo1">Codigo :</label> 
                             <input type="text" class="form-control" id="exampleInputcodigo"
@@ -126,22 +126,16 @@
                             <div class="form-group">
                                 <label for="exampleFormControlSelect3">Procesador :</label>
                                 <div class="form-group">
-                                    <select name="cboCPU" class="form-control" >
-                                        <option value="">Seleccionar</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                    </select>
+                                <select name="cboProcesador" class="form-control" >
+                                	<tools:cboCPU/>
+                                </select>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect4">Tarjeta Grafica :</label>
                                 <div class="form-group">
-                                    <select name="cboGPU" class="form-control" >
-                                        <option value="">Seleccionar</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
+                                	<select name="cboGPU" class="form-control" >
+                                    	<tools:cboGPU/>
                                     </select>
                                 </div>
                             </div>
@@ -151,10 +145,7 @@
                                 <label for="exampleFormControlSelect4">Almacenamiento :</label>
                                 <div class="form-group">
                                     <select name="cboAlmacenamiento" class="form-control" >
-                                        <option value="">Seleccionar</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
+                                        <tools:cboDisc/>
                                     </select>
                                 </div>
                             </div>
@@ -162,10 +153,7 @@
                                 <label for="exampleFormControlSelect4">Sistema Operativo :</label>
                                 <div class="form-group">
                                     <select name="cboSistemaOperativo" class="form-control" >
-                                        <option value="">Seleccionar</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
+                                        <tools:cboSistOpera/>
                                     </select>
                                 </div>
                             </div>
@@ -179,6 +167,7 @@
                         <button type="submit" class="btn btn-primary" name="opcion" value="añadirProducto">Añadir</button>
                     </form>
                 </section>
+                ${mensaje }
 			</div>
 		</div>
 	</main>

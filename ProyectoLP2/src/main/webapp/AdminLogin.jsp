@@ -32,7 +32,7 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña">
             </div>
             <div class="boton">
-                <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                <button type="submit" class="btn btn-primary"><a href="AdminLobby.jsp">INICIAR SESION</a></button>
             </div>
           </form>
     </main>

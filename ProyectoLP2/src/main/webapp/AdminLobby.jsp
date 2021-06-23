@@ -50,10 +50,10 @@
 								class="accordion-collapse collapse show"
 								aria-labelledby="panelsStayOpen-headingOne">
 								<div class="accordion-body ">
-									<li><a href="">Añadir</a></li>
+									<li><a href="AdminAñadirProd.jsp">Añadir</a></li>
 								</div>
 								<div class="accordion-body">
-									<li><a href="">Actualizar</a></li>
+									<li><a href="AdminListarProd.jsp">Actualizar</a></li>
 								</div>
 							</div>
 						</div>

@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Name Page</title>
@@ -20,7 +21,7 @@
 <body>
     <header class="encabezado">
         <div class="logo">
-            <a href="htmlindex.html">
+            <a href="index.jsp">
                 <img class="imgLogo" src="img/logo.png" alt="Imagenlogo">
             </a>
         </div>
@@ -126,7 +127,7 @@
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">CANTIDAD</div>
                                 <input type="number" min="1" value="1">
-                                <button type="button" class="btn btn-secondary">confirmar</button>
+                                <button type="button" class="btn btn-secondary"> confirmar</button>
                             </div>
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">SUBTOTAL</div>
@@ -142,7 +143,7 @@
                         </li>
                       </ul>
                       <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="button">Button</button>
+                        <button class="btn btn-primary" type="button"><a href="compraProducto.jsp">COMPRAR </a> </button>
                       </div>
                 </ul>
               </div>
@@ -180,7 +181,7 @@
                 </div>
                 <div class="BannerProd">
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/MonitorTeros_TE_3174N_27.jpg" alt="">
                             </div>
@@ -189,7 +190,7 @@
                         </a>
                     </div>
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/SillaCorsair_T2_ROADWARRIOR_ColorN.jpg" alt="">
                             </div>
@@ -198,7 +199,7 @@
                         </a>
                     </div>
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/MonitorTeros_TE_F240W_24.jpg" alt="">
                             </div>
@@ -207,7 +208,7 @@
                         </a>
                     </div>
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/SillaCorsair_T3_RACE_ColorG.jpg" alt="">
                             </div>
@@ -220,11 +221,11 @@
             <div class="BannerHome">
                 <div class="SubTitulo">
                     <h2>TODO LAPTOPS</h2>
-                    <button> <a href="html/htmlproductos.html">Ver más...</a></button>
+                    <button> <a href="catalogo.jsp">Ver más...</a></button>
                 </div>
                 <div class="BannerProd">
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/LaptopLenovo_YogaSlim7.jpg" alt="">
                             </div>
@@ -233,7 +234,7 @@
                         </a>
                     </div>
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/LaptopAsus_RogZephyrusDuo15.jpg" alt="">
                             </div>
@@ -242,7 +243,7 @@
                         </a>
                     </div>
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/LaptopDell_Vostro14.jpg" alt="">
                             </div>
@@ -251,7 +252,7 @@
                         </a>
                     </div>
                     <div class="BannerItem">
-                        <a href="html/htmlcompraProducto.html">
+                        <a href="compraProducto.jsp">
                             <div class="ImgProducto">
                                 <img class="ImagenProd" src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
                             </div>

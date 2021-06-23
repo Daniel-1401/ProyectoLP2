@@ -2,9 +2,9 @@ package beans;
 
 public class cpuDTO {
 	
-		public int codCPU;
+		public int codCPU, codMarca;
 
-		public String codMarca, nomCPU, modelCPU;
+		public String nomCPU, modelCPU;
 
 		public int getCodCPU() {
 			return codCPU;
@@ -14,11 +14,11 @@ public class cpuDTO {
 			this.codCPU = codCPU;
 		}
 
-		public String getCodMarca() {
+		public int getCodMarca() {
 			return codMarca;
 		}
 
-		public void setCodMarca(String codMarca) {
+		public void setCodMarca(int codMarca) {
 			this.codMarca = codMarca;
 		}
 
@@ -38,7 +38,11 @@ public class cpuDTO {
 			this.modelCPU = modelCPU;
 		}
 
-		public cpuDTO(int codCPU, String codMarca, String nomCPU, String modelCPU) {
+		public cpuDTO() {
+			super();
+		}
+
+		public cpuDTO(int codCPU, int codMarca, String nomCPU, String modelCPU) {
 			super();
 			this.codCPU = codCPU;
 			this.codMarca = codMarca;
@@ -46,8 +50,4 @@ public class cpuDTO {
 			this.modelCPU = modelCPU;
 		}
 
-		public cpuDTO() {
-			super();
-		}
-			
 }

@@ -16,7 +16,7 @@ public class MySQLProductoDAO implements productoDAO {
 		PreparedStatement ps = null;
 		try {
 			conexion = conexionBD.getConexion();
-			String sentencia = "call sp_insertar_producto(?,?,?,?,?,?,?,?,?,?);";
+			String sentencia = "call sp_insertarProducto(?,?,?,?,?,?,?,?,?,?);";
 			ps = conexion.prepareStatement(sentencia);
 			ps.setString(1, prod.getCodigoProducto());
 			ps.setString(2, prod.getModeloProducto());
@@ -27,7 +27,7 @@ public class MySQLProductoDAO implements productoDAO {
 			ps.setString(7, prod.getGpu());
 			ps.setString(8, prod.getDiscoDuro());
 			ps.setString(9, prod.getSistemaOperativo());
-			ps.setDouble(9, prod.getPrecioVenta());
+			ps.setDouble(10, prod.getPrecioVenta());
 			resultado = ps.executeUpdate();
 		}catch (Exception e) {
 			System.out.println("Error al registrar producto -> " + e.getMessage());

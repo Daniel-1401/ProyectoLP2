@@ -144,7 +144,7 @@
                         </li>
                       </ul>
                       <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="button">Button</button>
+                        <button class="btn btn-primary" type="button"><a href="compraProducto.jsp">COMPRAR</a></button>
                       </div>
                 </ul>
               </div>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="AddProducto">
                         <form action="">
-                            <button>Aï¿½ADIR AL CARRITO</button>
+                            <button>AñADIR AL CARRITO</button>
                             <div class="cantProd">
                                 <label for="">Und:</label>
                                 <input type="number" min="1" value="1"> 
@@ -248,7 +248,7 @@
     <footer>
         <div class="pieDePagina">
             <div>
-                <p>ï¿½2021 - Grupo Bombastic</p>
+                <p>2021 - Grupo Bombastic</p>
             </div> 
             <div>
                 <img src="img/iconVisa.png" alt="">

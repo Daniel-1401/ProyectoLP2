@@ -9,7 +9,7 @@ import beans.cpuDTO;
 import interfaces.cpuDAO;
 import util.conexionBD;
 
-public class MySQLCpuDAO implements cpuDAO{
+public class MySQLCpuDAO implements cpuDAO {
 
 	@Override
 	public ArrayList<cpuDTO> listarCPU() {
@@ -17,23 +17,23 @@ public class MySQLCpuDAO implements cpuDAO{
 		Connection con = null;
 		PreparedStatement pst = null;
 		ResultSet rst = null;
-		try {
+		try {	
 			con = conexionBD.getConexion();
-			String sql = "Select * from tb_CPU";
+			String sql = "call listacpu;";
 			pst = con.prepareStatement(sql);
-			rst= pst.executeQuery();
+			rst = pst.executeQuery();
 			while (rst.next()) {
-				cpuDTO cpu = new cpuDTO(rst.getInt(1),
-										rst.getString(2),
-										rst.getString(3),
-										rst.getString(4));
-				listarCPU.add(cpu);
+				cpuDTO gpu = new cpuDTO(	rst.getInt(1),
+											rst.getInt(2),
+											rst.getString(3),
+											rst.getString(4));
+				listarCPU.add(gpu);
 			}
-		} catch (Exception e) {
-			System.out.println("Error al listar CPU's:" +e.getMessage());
+		}catch (Exception e) {
+				System.out.println("Error al listar gpu's:" + e.getMessage());
 		}finally {
-			conexionBD.closeConexion(con);
-		}
+				conexionBD.closeConexion(con);
+			}
 		return listarCPU;
 	}
 

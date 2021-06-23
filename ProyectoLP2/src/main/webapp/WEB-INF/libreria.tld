@@ -20,12 +20,6 @@
    <info> Muestra las opciones del combo ciudad </info>
    </tag>
    
-   <tag>
-   <name> cboCPU </name>
-   <tagclass> etiquetas.cboCPU_Tag </tagclass>
-   <bodycontent> empty</bodycontent>
-   <info> Muestra las opciones del combo CPU </info>
-   </tag>
    
    <tag>
    <name> cboDisc </name>
@@ -33,7 +27,12 @@
    <bodycontent> empty</bodycontent>
    <info> Muestra las opciones del combo DiscoDuro </info>
    </tag>
-   
+   <tag>
+   <name> cboCPU</name>
+   <tagclass>etiquetas.cboCPU_Tag</tagclass>
+   <bodycontent> empty</bodycontent>
+   <info>Muestra las opciones del combo CPU</info>
+   </tag>
    <tag>
    <name> cboGPU </name>
    <tagclass> etiquetas.cboGPU_Tag </tagclass>

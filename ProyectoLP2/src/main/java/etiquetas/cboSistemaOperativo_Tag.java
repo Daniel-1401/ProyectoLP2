@@ -17,9 +17,9 @@ public class cboSistemaOperativo_Tag extends TagSupport{
 		try {
 			DAOFactory fabrica = DAOFactory.getDaoFactory(DAOFactory.MYSQL);
 			ArrayList<sistemaOperativoDTO> lista = fabrica.getSODAO().listarSO();
-			jsw.println("<option value='-1'>Seleccione</option");
+			jsw.println("<option value='-1'>Seleccione</option>");
 			for (sistemaOperativoDTO so : lista) {
-				jsw.println("option value=" + so.getCodSO() + ">" + so.getNomSO()+"</option>");
+				jsw.println("<option value=" + so.getCodSO() + ">" + so.getNomSO()+"</option>");
 			}
 		} catch (IOException e) {
 			System.out.println("Error en el cboSistemaOp:" + e.getMessage());

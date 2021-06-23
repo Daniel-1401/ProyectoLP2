@@ -63,7 +63,7 @@ public class productoServlet extends HttpServlet {
 		System.out.println("-- Opcion selesccionada: " + opc + " --");
 		
 		switch(opc) {
-		case "r": añadirProducto(request,response); break;
+		case "añadirProducto": añadirProducto(request,response); break;
 		case "a": actualizar(request,response); break;
 		case "e": eliminar(request,response); break;
 		case "l": listar(request,response); break;
@@ -73,21 +73,21 @@ public class productoServlet extends HttpServlet {
 		case "f": filtrar(request,response); break;
 		
 		default:
-			System.out.println("No seleccionï¿½ ninguna opciï¿½n");
-			
-			
+			System.out.println("No selecciono ninguna opcion");
 			}
 		}
 
 		
 
-		private void añadirProducto(HttpServletRequest request, HttpServletResponse response) {
+		private void añadirProducto(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			String mensaje = "";
+			String url = "";
 			String 	codigoProducto   = request.getParameter("txtCodigoProducto");
 			String 	modeloProducto   = request.getParameter("txtModeloProducto");
 			String	Categoria        = request.getParameter("cboCategoria");
 			String  Marca		     = request.getParameter("cboMarca");
 			String	DescrpPantalla   = request.getParameter("txtDescripcionPantalla");
-			String	cpu			     = request.getParameter("cboCPU");
+			String	cpu			     = request.getParameter("cboProcesador");
 			String	gpu			     = request.getParameter("cboGPU");
 			String	discoDuro        = request.getParameter("cboAlmacenamiento");
 			String	SistemaOperativo = request.getParameter("cboSistemaOperativo");
@@ -98,15 +98,26 @@ public class productoServlet extends HttpServlet {
 			prodNew.setModeloProducto(modeloProducto);
 			prodNew.setCategoria(Categoria);
 			prodNew.setMarca(Marca);
-			prodNew.setDescripcionPantalla(SistemaOperativo);
+			prodNew.setDescripcionPantalla(DescrpPantalla);
 			prodNew.setCpu(cpu);
 			prodNew.setGpu(gpu);
 			prodNew.setDiscoDuro(discoDuro);
 			prodNew.setSistemaOperativo(SistemaOperativo);
 			prodNew.setPrecioVenta(precio);
 			
-			DAOFactory fabrica = DAOFactory.getDaoFactory(DAOFactory.MYSQL);
+//			DAOFactory fabrica = DAOFactory.getDaoFactory(DAOFactory.MYSQL);
+			int registro = new MySQLProductoDAO().registrar(prodNew);
 			
+			if(registro == 0) {
+				mensaje +="<script>alert('ERROR AL REGISTRAR')</script>";
+				url += "/AdminAñadirProd.jsp";
+			}else {
+				mensaje = "<script>alert('Registro del producto <strong>" + modeloProducto + "</strong>')</script>";
+				url = "/AdminAñadirProd.jsp";
+			}
+			
+			request.setAttribute("mensaje", mensaje);
+			request.getRequestDispatcher(url).forward(request, response);
 			
 //			ArrayList<String> lista = new ArrayList<>();
 //			insertProductoDTO p = new insertProductoDTO();

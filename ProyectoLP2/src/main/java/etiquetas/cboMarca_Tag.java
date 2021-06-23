@@ -19,7 +19,7 @@ public class cboMarca_Tag extends TagSupport{
 			ArrayList<marcaDTO> lista = fabrica.getMarcaDAO().listarMarca();
 			jsw.println("<option value='-1'>Seleccione</option");
 			for (marcaDTO marca : lista) {
-				jsw.println("option value=" + marca.getCodMarca() + ">" + marca.getNomMarca()+"</option>");
+				jsw.println("<option value=" + marca.getCodMarca() + ">" + marca.getNomMarca()+"</option>");
 			}
 		} catch (IOException e) {
 			System.out.println("Error en el cboMarca:" + e.getMessage());

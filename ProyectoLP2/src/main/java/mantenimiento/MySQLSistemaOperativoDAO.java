@@ -19,12 +19,13 @@ public class MySQLSistemaOperativoDAO implements SistemaOperativoDAO{
 		ResultSet rst = null;
 		try {
 			con = conexionBD.getConexion();
-			String sql = "Select * from tb_SistemaOperativo";
+			String sql = "	SELECT * FROM tb_sistemaOperativo;";
 			pst = con.prepareStatement(sql);
 			rst = pst.executeQuery();
 			while(rst.next()) {
 				sistemaOperativoDTO so = new sistemaOperativoDTO(rst.getInt(1),
 																rst.getString(2));	
+				listarSistOperativo.add(so);
 			}
 		} catch (Exception e) {
 			System.out.println("Error al listar Sistema Operativo:"+ e.getMessage());

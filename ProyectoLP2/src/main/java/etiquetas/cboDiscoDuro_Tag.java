@@ -19,7 +19,7 @@ public class cboDiscoDuro_Tag extends TagSupport {
 				ArrayList<DiscoDuroDTO> lista = fabrica.getDiscoDuroDAO().listarDiscoDuro();
 				jsw.println("<option value='-1'>Seleccione</option>");
 				for(DiscoDuroDTO dd : lista) {
-					jsw.println("option value="+ dd.getCodMarca()+ ">" + dd.getCapacidad()+"</option>");
+					jsw.println("<option value="+ dd.getCodMarca()+ ">" + dd.getCapacidad()+"</option>");
 				}
 			} catch (IOException e) {
 				System.out.println("Erro en el cboDiscoDuro:" + e.getMessage());

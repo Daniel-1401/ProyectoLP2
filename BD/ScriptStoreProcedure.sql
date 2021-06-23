@@ -140,6 +140,17 @@ END$$
 
 CALL sp_listarProducto()
 
+-- PROCEDURE  PARA COMBOX
+-- CPU
+DELIMiTER $$
+create procedure listacpu()
+begin
+select *
+from tb_cpu;
+end$$
+DELIMiTER ;
+
+call listacpu;
 
 
 
@@ -153,19 +164,7 @@ end$$
 DELIMiTER ;
 
 
--- PROCEDURE  PARA COMBOX
-show tables;
 
--- CPU
-DELIMiTER $$
-create procedure listacpu()
-begin
-select codCPU,nombreCPU
-from tb_cpu;
-end$$
-DELIMiTER ;
-
-call listacpu
 
 -- GPU
 DELIMiTER $$

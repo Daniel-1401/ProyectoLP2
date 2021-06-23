@@ -17,9 +17,9 @@ public class cboGPU_Tag extends TagSupport{
 		try {
 			DAOFactory fabrica = DAOFactory.getDaoFactory(DAOFactory.MYSQL);
 			ArrayList<gpuDTO> lista = fabrica.getGPU().listarGPU();
-			jsw.println("<option value='-1'>Seleccione</option");
+			jsw.println("<option value='-1'>Seleccione</option>");
 			for (gpuDTO gpu : lista) {
-				jsw.println("option value=" + gpu.getCodGPU() + ">" + gpu.getNomGPU()+"</option>");
+				jsw.println("<option value=" + gpu.getCodGPU() + ">" + gpu.getNomGPU()+"</option>");
 			}
 		} catch (IOException e) {
 			System.out.println("Error en el cboGPU:" + e.getMessage());
