@@ -124,7 +124,7 @@
                             <td>
                               <div class="d-grid gap-2 d-md-block">
                                 <form action="">
-                                  <button class="btn btn-primary" type="button">Modificar</button>
+                                  <button class="btn btn-primary" type="button"><a href="AdminModificar.jsp">Modificar</a></button>
                                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
                                 </form>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
