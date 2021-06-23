@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    
+    <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
@@ -12,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/cssPagAdmin/GeneralCRUD.css">
-    <link rel="stylesheet" href="../../css/cssPagAdmin/crudAÃ±adir.css">
+    <link rel="stylesheet" href="../../css/cssPagAdmin/crudAñadir.css">
 </head>
 <body>
 	<main>
@@ -50,7 +54,7 @@
 								class="accordion-collapse collapse show"
 								aria-labelledby="panelsStayOpen-headingOne">
 								<div class="accordion-body ">
-									<li><a href="">AÃ±adir</a></li>
+									<li><a href="">Añadir</a></li>
 								</div>
 								
 								<div class="accordion-body">
@@ -83,7 +87,7 @@
 			</div>
 			<div class="contenidoPrincipal">
 				<section style="width: 65%;float: left;">
-                    <h2>AÃ±adir nuevo producto de cuenta</h2>
+                    <h2>Añadir nuevo producto de cuenta</h2>
                     <form action="us" method="post">
                         <div class="form-group">
                             <label for="exampleInputCodigo1">Codigo :</label> <input
@@ -179,7 +183,7 @@
                                 placeholder="Ingrese precio del producto" name="txtPrecio" min="1000">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary" name="opcion" value="l">AÃ±adir</button>
+                        <button type="submit" class="btn btn-primary" name="opcion" value="l">Añadir</button>
                     </form>
                 </section>
 			</div>
@@ -187,3 +191,5 @@
 	</main>
 </body>
 </html>
+    
+    

@@ -1,0 +1,15 @@
+.botonesModal{
+	margin:50px 50px;
+	padding-left: 110px;
+}	
+
+.controlarimg{
+	width: 250px;
+    height: 150px;
+    margin: auto;
+}
+
+.controlarimg label{
+	text-align: center;
+	padding-left: 50px;
+}
