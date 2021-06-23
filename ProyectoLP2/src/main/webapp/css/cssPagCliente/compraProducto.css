@@ -1,12 +1,19 @@
+
 main{
     display: flex;
 }
 .blockHome{
     width: 1350px;
     display: grid;
+    padding: 20px;
     grid-template-columns: 49% 49%;
     gap: 2%;
-    margin: auto;
+    margin: 30px auto;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+    background: rgb(228, 228, 228);
+    
 }
 .Usuario{
     width: 600px;
@@ -40,4 +47,30 @@ main{
 .datosUser h3{
     font-size: 20px;
     margin: auto;
+}
+.imgItem{
+    width: 65px;
+    height: 65px;
+}
+.imgItem img{
+    width: 100%;
+}
+.total{
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 10px;
+}
+.cartProducto{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5px;
+}
+.lineButton{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(174, 174, 174);
+}
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
