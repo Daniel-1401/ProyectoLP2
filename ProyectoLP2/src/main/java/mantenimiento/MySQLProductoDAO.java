@@ -2,7 +2,10 @@ package mantenimiento;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 
+import beans.categoriaDTO;
 import beans.productosDTO;
 import interfaces.productoDAO;
 import util.conexionBD;
@@ -65,5 +68,35 @@ public class MySQLProductoDAO implements productoDAO {
 		return 0;
 	}
 
-
+	@Override
+	public ArrayList<productosDTO> listarProd() {
+		ArrayList<productosDTO> listarProduc = new ArrayList<productosDTO>();
+		Connection con = null;
+		PreparedStatement pst = null;
+		ResultSet rslt = null;
+		try {
+			con = conexionBD.getConexion();
+			String sql = "Select * from tb_producto";
+			pst = con.prepareStatement(sql);
+			rslt = pst.executeQuery();			
+			while (rslt.next()) {
+				productosDTO prod = new productosDTO(rslt.getString(1),
+													rslt.getString(2),
+													rslt.getString(3),
+													rslt.getString(4),
+													rslt.getString(5),
+													rslt.getString(6),
+													rslt.getString(7),
+													rslt.getString(8),
+													rslt.getString(9),
+													rslt.getDouble(10));
+				listarProduc.add(prod);
+			}
+		} catch (Exception e) {
+			System.out.println("Error al listar productos:" + e.getMessage());
+		}finally {
+			conexionBD.closeConexion(con);
+		}
+	return listarProduc;
+}
 }

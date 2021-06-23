@@ -210,19 +210,16 @@ public class productoServlet extends HttpServlet {
 
 		private void listar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			// TODO Auto-generated method stub
+			//System.out.println("Ingres� al proceso listado");
+			//DAOFactory fabrica = DAOFactory.getDaoFactory(DAOFactory.MYSQL);
+			//productoDAO pro = fabrica.getProductoDAO();
+			//request.getRequestDispatcher("listado.jsp").forward(request, response);
 			System.out.println("Ingres� al proceso listado");
-			//obtener el listado del producto, sin usar patron DAO
-			//ArrayList<ProductoDTO> lista =  new MySQLProductoDAO().listado();
-			
-			// Usando ahora si patron DAO
 			DAOFactory fabrica = DAOFactory.getDaoFactory(DAOFactory.MYSQL);
+			ArrayList<productosDTO> p =  new MySQLProductoDAO().listarProd();
 			productoDAO pro = fabrica.getProductoDAO();
-			
-			//error ArrayList<productoDTO> lista = pro.listado();
-			
-			//enviar el listado al JSP 
-			//error request.setAttribute("lstProductos", lista);
-			request.getRequestDispatcher("listado.jsp").forward(request, response);
+			request.setAttribute("p", p);
+			request.getRequestDispatcher("AdminListarProd.jsp").forward(request, response);
 			
 		}
 		
