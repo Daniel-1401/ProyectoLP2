@@ -49,8 +49,5 @@ public class cpuDTO {
 		public cpuDTO() {
 			super();
 		}
-		
-		
-		
-		
+			
 }

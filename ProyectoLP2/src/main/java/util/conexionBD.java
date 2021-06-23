@@ -11,7 +11,7 @@ public class conexionBD {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			String url = "jdbc:mysql://localhost:3306/ciberimpacto?useSSL=false&useTimezone=true&serverTimezone=UTC";
 			String usr = "root";
-			String psw = "mysql";
+			String psw = "toor";
 			conexion = DriverManager.getConnection(url, usr, psw);
 		} catch (ClassNotFoundException e) {
 				System.out.println("Driver no instalado -> " + e.getMessage());

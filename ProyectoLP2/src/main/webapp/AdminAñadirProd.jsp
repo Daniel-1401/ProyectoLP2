@@ -1,3 +1,4 @@
+<%@ taglib uri="/WEB-INF/libreria.tld"  prefix="tools"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -85,7 +86,7 @@
 			</div>
 			<div class="contenidoPrincipal">
 				<section style="width: 65%;float: left;">
-                    <h2>Aï¿½adir nuevo producto de cuenta</h2>
+                    <h2>Añadir nuevo producto de cuenta</h2>
                     <form action="prodServ" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="exampleInputCodigo1">Codigo :</label> 
@@ -102,10 +103,7 @@
                                 <label for="exampleFormControlSelect1">Categoria :</label>
                                 <div class="form-group">
                                     <select name="cboCategoria" class="form-control" >
-                                        <option value="">Seleccionar</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
+                                        <tools:cboCat/>
                                     </select>
                                 </div>
                             </div>
@@ -114,10 +112,7 @@
                                 <label for="exampleFormControlSelect2">Marca :</label>
                                 <div class="form-group">
                                     <select name="cboMarca" class="form-control" >
-                                        <option value="">Seleccionar</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
+                                        <tools:cboMarca/>
                                     </select>
                                 </div>
                             </div>
@@ -181,7 +176,7 @@
                                 placeholder="Ingrese precio del producto" name="txtPrecioProducto">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary" name="opcion" value="aï¿½adirProducto">Aï¿½adir</button>
+                        <button type="submit" class="btn btn-primary" name="opcion" value="añadirProducto">Añadir</button>
                     </form>
                 </section>
 			</div>

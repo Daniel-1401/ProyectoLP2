@@ -51,13 +51,13 @@ BEGIN
 			codCiudad			= codCiudad,
 			numeroRUC			= numeroRUC,
 			direccion			= direccion
-	WHERE codUsuario = codUsuario;
+	WHERE tb_usuarios.codUsuario = codUsuario;
 END$$
 
 
 -- PRODUCTO
 DELIMITER $$
-create procedure sp_insertar_producto
+create procedure sp_insertarProducto
 	(
 		codProducto				VARCHAR(5),
 		modeloProducto			VARCHAR(45),
@@ -76,26 +76,26 @@ BEGIN
 	(
 		codProducto,
 		modeloProducto,
-		codCategoria,
-		codMarca,
+		Categoria,
+		Marca,
 		descripcionPantalla,
-		codCPU,
-		codGPU,
-		codDiscoDuro,
-		codSistemaOperativo,
+		CPUU,
+		GPU,
+		DiscoDuro,
+		SistemaOperativo,
 		precioVenta
 	)
 	VALUES
 	(
 		codProducto,
 		modeloProducto,
-		codCategoria,
-		codMarca,
+		Categoria,
+		Marca,
 		descripcionPantalla,
-		codCPU,
-		codGPU,
-		codDiscoDuro,
-		codSistemaOperativo,
+		CPUU,
+		GPU,
+		DiscoDuro,
+		SistemaOperativo,
 		precioVenta
 	);
     /*
@@ -110,40 +110,37 @@ BEGIN
         imagen
     );*/
 END$$
+call sp_insertarProducto('PRO01','LENOVO-RAYO','CategoriaX','MarcaX','PantXpulgadas','CPUX','GPUX','DiscoDuroX','SisX',4900);
+
+DELIMITER $$
+CREATE PROCEDURE sp_ActualizarProducto
+(
+		codProducto				VARCHAR(5),
+		DiscoDuro		 		VARCHAR(45),
+		SistemaOperativo		VARCHAR(45),
+		precioVenta		 		DECIMAL(7,2)
+--        imagen					LONGBLOB
+)
+BEGIN
+	UPDATE tb_producto
+    SET DiscoDuro = DiscoDuro,
+		SistemaOperativo = SistemaOperativo,
+        precioVenta = precioVenta
+	WHERE tb_producto.codProducto = codProducto;
+END$$
+call sp_ActualizarProducto('PRO01','DiscoDuroY','SisY',9900);
 
 DELIMITER $$
 CREATE PROCEDURE sp_listarProducto()
 BEGIN
 	SELECT 
 			*
-			/*prod.codProducto,
-            prod.modeloProducto,
-            prod.codCategoria,
-            prod.codMarca,
-            prod.descripcionPantalla,
-            prod.codCPU,
-            prod.codGPU,
-            prod.discoDuro,
-            prodSistemaOperativo,
-            prod.precioVenta*/
-            -- img.imagen								 AS `imagen`
-    FROM tb_producto prod;
-    /*INNER JOIN tb_categoria 		cat ON prod.codCategoria=cat.codCategoria
-    INNER JOIN tb_marca				mar ON prod.codMarca=mar.codMarca
-    INNER JOIN tb_CPU				cp  ON prod.codCPU=cp.codCPU
-    INNER JOIN tb_GPU				gpu ON prod.codGPU=gpu.codGPU
-    INNER JOIN tb_discoDuro			dsc	ON prod.codDiscoDuro=dsc.codDiscoDuro
-    INNER JOIN tb_tipoDiscoDuro 	tds ON dsc.codTipoDiscoDuro=tds.codTipoDiscoDuro
-    INNER JOIN tb_SistemaOperativo 	stm ON prod.codSistemaOperativo=stm.codSistemaOperativo
-	INNER JOIN imagenesProducto		img ON prod.codProducto=img.codProducto;
-*/
+	FROM tb_producto;
 END$$
 
--- EJECUTAMOS USP_INSERTAPRODUCTO
--- call usp_insertaproducto('PRO01','Laptop LENOVO-RAYO','MAR02','Gamer','CPU01','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',900);
--- call usp_insertaproducto('PRO02','Laptop HP-PAVILION','MAR03','Gamer X4','CPU02','Pantalla Gorila Glass','DIS01','GPU01','CAT01','SIS01',789);
---  call usp_insertaproducto('PRO03','Laptop SONY','MAR04','Gamer X904','CPU01','PANTALLA TACTIL','DIS01','GPU02','CAT03','SIS01',989);
--- select * from tb_produtcto;
+CALL sp_listarProducto()
+
+
 
 
 
