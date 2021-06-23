@@ -4,7 +4,7 @@ public class usuarioDTO {
 
 	public String codUsu;
 	public int codTipoUsu;
-	public String email, contrase�a, nomUsu, apeUsu;
+	public String email, contrasenia, nomUsu, apeUsu;
 	
 
 	public void setCodUsu(String codUsu) {
@@ -31,12 +31,12 @@ public class usuarioDTO {
 		this.email = email;
 	}
 
-	public String getContrase�a() {
-		return contrase�a;
+	public String getContrasenia() {
+		return contrasenia;
 	}
 
-	public void setContrase�a(String contrase�a) {
-		this.contrase�a = contrase�a;
+	public void setContrasenia(String contrasenia) {
+		this.contrasenia = contrasenia;
 	}
 
 	public String getNomUsu() {
@@ -55,20 +55,20 @@ public class usuarioDTO {
 		this.apeUsu = apeUsu;
 	}
 
-	public usuarioDTO(String codUsu, int codTipoUsu, String email, String contrase�a, String nomUsu, String apeUsu) {
+	public usuarioDTO(String codUsu, int codTipoUsu, String email, String contrasenia, String nomUsu, String apeUsu) {
 		super();
 		this.codUsu = codUsu;
 		this.codTipoUsu = codTipoUsu;
 		this.email = email;
-		this.contrase�a = contrase�a;
+		this.contrasenia = contrasenia;
 		this.nomUsu = nomUsu;
 		this.apeUsu = apeUsu;
 	}
 	
 	@Override
 	public String toString() {
-		return "usuarioDTO [codUsu=" + codUsu + ", codTipoUsu=" + codTipoUsu + ", email=" + email + ", contrase�a="
-				+ contrase�a + ", nomUsu=" + nomUsu + ", apeUsu=" + apeUsu + "]";
+		return "usuarioDTO [codUsu=" + codUsu + ", codTipoUsu=" + codTipoUsu + ", email=" + email + ", contrasenia="
+				+ contrasenia + ", nomUsu=" + nomUsu + ", apeUsu=" + apeUsu + "]";
 	}
 
 	public usuarioDTO() {

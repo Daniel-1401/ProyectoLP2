@@ -31,7 +31,7 @@ int rs = 0;
 			pst.setString(1, u.getCodUsu());
 			pst.setInt(2, u.getCodTipoUsu());
 			pst.setString(3, u.getEmail());
-			pst.setString(4, u.getContrase�a());
+			pst.setString(4, u.getContrasenia());
 			pst.setString(5, u.getNomUsu());
 			pst.setString(6, u.getApeUsu());
 			
