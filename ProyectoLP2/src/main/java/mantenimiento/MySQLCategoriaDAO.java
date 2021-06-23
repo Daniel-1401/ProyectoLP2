@@ -28,7 +28,7 @@ public class MySQLCategoriaDAO implements categoriaDAO {
 					listarCategoria.add(cate);
 				}
 			} catch (Exception e) {
-				System.out.println("Error al listar clientes:" + e.getMessage());
+				System.out.println("Error al listar categorias:" + e.getMessage());
 			}finally {
 				conexionBD.closeConexion(con);
 			}

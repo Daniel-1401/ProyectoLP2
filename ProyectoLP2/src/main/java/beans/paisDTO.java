@@ -2,13 +2,14 @@ package beans;
 
 public class paisDTO {
 	
-	public String codPais, nomPais;
+	public int codPais;
+	public String nomPais;
 
-	public String getCodPais() {
+	public int getCodPais() {
 		return codPais;
 	}
 
-	public void setCodPais(String codPais) {
+	public void setCodPais(int codPais) {
 		this.codPais = codPais;
 	}
 
@@ -20,7 +21,7 @@ public class paisDTO {
 		this.nomPais = nomPais;
 	}
 
-	public paisDTO(String codPais, String nomPais) {
+	public paisDTO(int codPais, String nomPais) {
 		super();
 		this.codPais = codPais;
 		this.nomPais = nomPais;
@@ -30,7 +31,5 @@ public class paisDTO {
 		super();
 	}
 	
-	
-	
-	
+
 }

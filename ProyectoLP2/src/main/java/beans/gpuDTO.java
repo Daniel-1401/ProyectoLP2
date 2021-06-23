@@ -2,9 +2,9 @@ package beans;
 
 public class gpuDTO {
 	
-	public int codGPU;
+	public int codGPU,codMarca;
 	
-	public String codMarca, nomGPU, cap;
+	public String nomGPU, cap;
 
 	public int getCodGPU() {
 		return codGPU;
@@ -14,11 +14,11 @@ public class gpuDTO {
 		this.codGPU = codGPU;
 	}
 
-	public String getCodMarca() {
+	public int getCodMarca() {
 		return codMarca;
 	}
 
-	public void setCodMarca(String codMarca) {
+	public void setCodMarca(int codMarca) {
 		this.codMarca = codMarca;
 	}
 
@@ -38,7 +38,7 @@ public class gpuDTO {
 		this.cap = cap;
 	}
 
-	public gpuDTO(int codGPU, String codMarca, String nomGPU, String cap) {
+	public gpuDTO(int codGPU, int codMarca, String nomGPU, String cap) {
 		super();
 		this.codGPU = codGPU;
 		this.codMarca = codMarca;
@@ -49,8 +49,6 @@ public class gpuDTO {
 	public gpuDTO() {
 		super();
 	}
-	
-	
 	
 	
 }
