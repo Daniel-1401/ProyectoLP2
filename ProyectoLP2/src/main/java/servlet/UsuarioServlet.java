@@ -86,7 +86,7 @@ public class UsuarioServlet extends HttpServlet {
 		u.setCodUsu(codusuario);
 		u.setCodTipoUsu(tipocod);
 		u.setEmail(email);
-		u.setContraseña(contraseña);
+		u.setContrasenia(contraseña);
 		u.setNomUsu(nombreusu);
 		u.setApeUsu(apellidos);
 		
