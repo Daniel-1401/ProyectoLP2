@@ -1,88 +1,283 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/sesionCRUD.css">
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+	crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="../css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/sesionCRUD.css">
 </head>
 <body>
-    <main>
-        <div class="content">
-            <div class="logo">
-                <img class="imglogo" src="../img/logo.png" alt="">
+
+	<div class="content">
+		<div class="logo">
+			<img class="imglogo" src="../img/logo.png" alt="">
+		</div>
+		<div class="usuario">
+			<div class="iconUsuario">
+				<img src="../img/login.png" alt="">
+			</div>
+			<div class="nombre">
+				<h2>$NOMBRE$</h2>
+			</div>
+		</div>
+		<div class="d-flex">
+			<div class="barraMenu col-sm-10">
+				<div class="userMenu">
+					<div class="imgUser">
+						<img src="../img/login.png" alt="">
+					</div>
+					<h2>$full nombre$</h2>
+				</div>
+				<br>
+				<div class="menu">
+					<h2>MENU</h2>
+					<div class="accordion" id="accordionPanelsStayOpenExample">
+						<div class="accordion-item colorAccordion">
+							<h2 class="accordion-header " id="panelsStayOpen-headingOne">
+								<button class="accordion-button " type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseOne"
+									aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+									Mantenimiento</button>
+							</h2>
+							<div id="panelsStayOpen-collapseOne"
+								class="accordion-collapse collapse show"
+								aria-labelledby="panelsStayOpen-headingOne">
+								<div class="accordion-body ">
+									<li><a href="">Añadir</a></li>
+								</div>
+								<div class="accordion-body">
+									<li><a href="">Actualizar</a></li>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item colorAccordion">
+							<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+								<button class="accordion-button collapsed" type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseTwo"
+									aria-expanded="false"
+									aria-controls="panelsStayOpen-collapseTwo">Reporte</button>
+							</h2>
+							<div id="panelsStayOpen-collapseTwo"
+								class="accordion-collapse collapse"
+								aria-labelledby="panelsStayOpen-headingTwo">
+								<div class="accordion-body">
+									<li><a href="">Reporte 1</a></li>
+								</div>
+								<div class="accordion-body">
+									<li><a href="">Reporte 2</a></li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="formulario_perfil">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-1 col-md-0"></div>
+					<div class="col-lg-6 col-md-5 col-sm-5">
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Nombre Producto:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="NomPro" id="NomPro"
+									placeholder="Nombre del producto">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Código Marca:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="CodMar" id="CodMar"
+									placeholder="Código de la Marca">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Modelo Producto:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="ModPro" id="ModPro"
+									placeholder="Modelo del producto">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Código CPU:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="CodCPU" id="CodCPU"
+									placeholder="Código CPU">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Descripción pantalla:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="DesPan" id="DesPan"
+									placeholder="Descripción">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Código Disco duro:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="CodDis" id="CodDis"
+									placeholder="Código disco duro">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Código GPU:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="CodGPU" id="CodGPU"
+									placeholder="Código GPU">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Código Categoría:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="CodCat" id="CodCat"
+									placeholder="Código categoría">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Código Sistema Operativo:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="text" name="CodSys" id="CodSys"
+									placeholder="Código del sistema operativo">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<p>Precio venta:</p>
+							</div>
+							<div class="col-lg-3">
+								<input class="campos" type="number" name="PreVen" id="PreVen"
+									placeholder="Precio del producto">
+							</div>
+						</div>
+						
+
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<div class="row">
+
+							<div style="text-align: center;" class="col-lg-12">
+								<p>Seleccione la imagen:</p>
+								<div style="text-align: justify;" class="col-lg-7">
+									<input type="file" name="ImagenUs" id="ImagenUs">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+						<input class="botones" type="submit" value="Agregar Producto">
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!--     <div class="content card col-sm-4">
+            <div class="form-group">
+             <h2>Agregar nuevo producto</h2>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Código Producto:</label>
+                <input type="text" name="txtCodPro" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Nombre Producto:</label>
+                <input type="text" name="txtNomPro" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Código Marca:</label>
+                <input type="text" name="txtCodMar" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Modelo Producto:</label>
+                <input type="text" name="txtModPro" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Código CPU:</label>
+                <input type="text" name="txtCodCPU" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Descripción pantalla:</label>
+                <input type="text" name="txtDesPan" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Código Disco duro:</label>
+                <input type="text" name="txtCodDis" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Código GPU:</label>
+                <input type="text" name="txtCodGPU" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Código Categoría:</label>
+                <input type="text" name="txtCodCat" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Código Sistema Operativo:</label>
+                <input type="text" name="txtCodSys" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Precio venta:</label>
+                <input type="number" name="txtPrecio" class="form-control">
+              </div>
+                <input type="submit" name="accion" value="Agregar" class="btn btn-info">
+              </div>
             </div>
-            <div class="usuario">
-                <div class="iconUsuario">
-                    <img src="../img/login.png" alt="">
-                </div>
-                <div class="nombre">
-                    <h2>$NOMBRE$</h2>
-                </div>
-            </div>
-            <div class="barraMenu">
-                <div class="userMenu">
-                    <div class="imgUser">
-                        <img src="../img/login.png" alt="">
-                    </div>
-                    <h2>$full nombre$</h2>
-                </div>
-                <br>
-                <div class="menu">
-                    <h2>MENU</h2>
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item colorAccordion">
-                          <h2 class="accordion-header " id="panelsStayOpen-headingOne">
-                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                              Mantenimiento
-                            </button>
-                          </h2>
-                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                            <div class="accordion-body ">
-                              <li>
-                                <a href="">Añadir</a>
-                              </li>
-                            </div>
-                            <div class="accordion-body">
-                              <li>
-                                <a href="">Actualizar</a>
-                              </li>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item colorAccordion">
-                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                              Reporte
-                            </button>
-                          </h2>
-                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                            <div class="accordion-body">
-                              <li>
-                                <a href="">Reporte 1</a>
-                              </li>
-                            </div>
-                            <div class="accordion-body">
-                              <li>
-                                <a href="">Reporte 2</a>
-                              </li>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="contenido">
-              <!--   <Label>BIENVENIDO</Label>  -->
-            </div>
-        </div>
-    </main>
+          </div>
+
+
+          
+        </div> -->
+
+		<!-- </main> -->
 </body>
 </html>
