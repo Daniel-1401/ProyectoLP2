@@ -23,7 +23,7 @@ Insert into tb_CPU values (05,09,'Procesador AMD'  ,'Ryzen 7 5700X' );
 Insert into tb_CPU values (06,09,'Procesador AMD'  ,'Ryzen 9 3600'  );
 Insert into tb_CPU values (07,09,'Procesador AMD'  ,'Ryzen 9 5950X' );
 Insert into tb_CPU values (09,09,'Procesador AMD'  ,'Ryzen 9 3900X ');
-Insert into tb_CPU values (10,12,'Chip'            ,'M1'            );
+Insert into tb_CPU values (10,12,'Apple Chip'      ,'M1'            );
 
 -- TB_GPU
 Insert into tb_GPU values (01,08, 'RTX 3090'         ,'24 GB');

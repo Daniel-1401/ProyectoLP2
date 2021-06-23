@@ -134,7 +134,7 @@ BEGIN
     INNER JOIN tb_discoDuro			dsc	ON prod.codDiscoDuro=dsc.codDiscoDuro
     INNER JOIN tb_tipoDiscoDuro 	tds ON dsc.codTipoDiscoDuro=tds.codTipoDiscoDuro
     INNER JOIN tb_SistemaOperativo 	stm ON prod.codSistemaOperativo=stm.codSistemaOperativo
-    INNER JOIN imagenesProducto		img ON prod.codProducto=img.codProducto;
+	INNER JOIN imagenesProducto		img ON prod.codProducto=img.codProducto;
 END$$
 
 -- EJECUTAMOS USP_INSERTAPRODUCTO

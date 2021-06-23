@@ -11,27 +11,13 @@
 }
 .ImagenesProducto{
     width: 500px;
-    height: 600px;
+    height: 500px;
     text-align: center;
     margin: 20px;
 }
 .imgPrincipal{
     width: 500px;
     height: 500px;
-
-    border-radius: 10px;
-}
-.SliderImagenes{
-    height: 100px;
-    width: 265px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.imgSecundario{
-    width: 85px;
-    height: 85px;
-    margin: 2px;
     border-radius: 10px;
 }
 .ShopProducto{
