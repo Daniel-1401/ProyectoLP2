@@ -7,29 +7,29 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Name Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet icon" href="../../img/logo.png">
+    <link rel="stylesheet icon" href="img/logo.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
-    <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type='text/css' media='screen' href='../../css/cssPagCliente/productos.css'>
-    <link rel="stylesheet" type='text/css' media='screen' href='../../css/cssPagCliente/header.css'>
-    <link rel="stylesheet" type='text/css' media='screen' href='../../css/cssPagCliente/footer.css'>
-    <link rel="stylesheet" type="text/css" media="screen" href="../../css/cssPagCliente/barraNavegacion.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' media='screen' href='css/cssPagCliente/productos.css'>
+    <link rel="stylesheet" type='text/css' media='screen' href='css/cssPagCliente/header.css'>
+    <link rel="stylesheet" type='text/css' media='screen' href='css/cssPagCliente/footer.css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cssPagCliente/barraNavegacion.css">
 </head>
 <body>
     <header class="encabezado">
         <div class="logo">
             <a href="htmlindex.html">
-                <img class="imgLogo" src="../../img/logo.png" alt="Imagenlogo">
+                <img class="imgLogo" src="img/logo.png" alt="Imagenlogo">
             </a>
         </div>
     </header>
     <div class="barraUsuario">
         <div class="Usuario">
             <div class="ImagenUsuario">
-                <img class="imgUsuario" src="../../img/login.png" alt="imagenUsuario">
+                <img class="imgUsuario" src="img/login.png" alt="imagenUsuario">
             </div>
             <div class="informacionUsuario">
                 <div class="nombreUsuario">
@@ -71,7 +71,7 @@
         <div class="Carrito">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="imgCarrito" src="../../img/shop.png" alt="imgCarrito">
+                        <img class="imgCarrito" src="img/shop.png" alt="imgCarrito">
                 </button>
                 <ul class="itemsCarrito dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <ol class="list-group list-group-numbered">
@@ -82,7 +82,7 @@
                             </div>
                             <div class="ms-2 me-auto">
                                 <div class="imgItem">
-                                    <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
+                                    <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
                                 </div>
                             </div>
                             <div class="ms-2 me-auto">
@@ -102,7 +102,7 @@
                             </div>
                             <div class="ms-2 me-auto">
                                 <div class="imgItem">
-                                    <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
+                                    <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
                                 </div>
                             </div>
                             <div class="ms-2 me-auto">
@@ -122,7 +122,7 @@
                             </div>
                             <div class="ms-2 me-auto">
                                 <div class="imgItem">
-                                    <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
+                                    <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="">
                                 </div>
                             </div>
                             <div class="ms-2 me-auto">
@@ -164,7 +164,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Laptops Gamer</a></li>
-                      <li><a class="dropdown-item" href="#">Laptops Diseño</a></li>
+                      <li><a class="dropdown-item" href="#">Laptops Diseï¿½o</a></li>
                       <li><a class="dropdown-item" href="#">Laptops Trabajo</a></li>
                       <li><a class="dropdown-item" href="#">Notebooks</a></li>
                     </ul>
@@ -228,7 +228,7 @@
                 <div class="Productos">
                     <div class="ProductoItem">
                         <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
+                            <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
                         </div>
                         <div class="infoItem">        	
                             <div class="contenidoItem">
@@ -241,14 +241,14 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
                     </div>
                     <div class="ProductoItem">
                         <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
+                            <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
                         </div>
                         <div class="infoItem">        	
                             <div class="contenidoItem">
@@ -261,14 +261,14 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
                     </div>
                     <div class="ProductoItem">
                         <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
+                            <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
                         </div>
                         <div class="infoItem">        	
                             <div class="contenidoItem">
@@ -281,14 +281,14 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
                     </div>
                     <div class="ProductoItem">
                         <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
+                            <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
                         </div>
                         <div class="infoItem">        	
                             <div class="contenidoItem">
@@ -301,14 +301,14 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
                     </div>
                     <div class="ProductoItem">
                         <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
+                            <img src="img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
                         </div>
                         <div class="infoItem">        	
                             <div class="contenidoItem">
@@ -321,87 +321,7 @@
                         </div>                         
                         <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
                             <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
-                                <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
-                            </form>
-                        </div>                    
-                    </div>
-                    <div class="ProductoItem">
-                        <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
-                        </div>
-                        <div class="infoItem">        	
-                            <div class="contenidoItem">
-                                <p class="producto_categoria">LAPTOP</p> 
-                                <div class="info">
-                                    <p class="producto_name">Lenovo YogaSlim 7</p>
-                                    <p class="producto_price">S/. 99999</p>
-                                </div>                                               
-                            </div>
-                        </div>                         
-                        <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
-                            <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
-                                <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
-                            </form>
-                        </div>                    
-                    </div>
-                    <div class="ProductoItem">
-                        <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
-                        </div>
-                        <div class="infoItem">        	
-                            <div class="contenidoItem">
-                                <p class="producto_categoria">LAPTOP</p> 
-                                <div class="info">
-                                    <p class="producto_name">Lenovo YogaSlim 7</p>
-                                    <p class="producto_price">S/. 99999</p>
-                                </div>                                               
-                            </div>
-                        </div>                         
-                        <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
-                            <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
-                                <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
-                            </form>
-                        </div>                    
-                    </div>
-                    <div class="ProductoItem">
-                        <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
-                        </div>
-                        <div class="infoItem">        	
-                            <div class="contenidoItem">
-                                <p class="producto_categoria">LAPTOP</p> 
-                                <div class="info">
-                                    <p class="producto_name">Lenovo YogaSlim 7</p>
-                                    <p class="producto_price">S/. 99999</p>
-                                </div>                                               
-                            </div>
-                        </div>                         
-                        <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
-                            <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
-                                <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
-                            </form>
-                        </div>                    
-                    </div>
-                    <div class="ProductoItem">
-                        <div class="imagen">
-                            <img src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" alt="" />
-                        </div>
-                        <div class="infoItem">        	
-                            <div class="contenidoItem">
-                                <p class="producto_categoria">LAPTOP</p> 
-                                <div class="info">
-                                    <p class="producto_name">Lenovo YogaSlim 7</p>
-                                    <p class="producto_price">S/. 99999</p>
-                                </div>                                               
-                            </div>
-                        </div>                         
-                        <div class="botones d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
-                            <form action="">
-                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="htmlcompraProducto.html">info</a></button>
+                                <button class="btn btn-primary me-md-2" type="button" name="optionBuy" value="info"><a href="compraProducto.jsp">info</a></button>
                                 <button class="btn btn-primary" type="button" name="optionBuy" value="buy">Add To Cart</button>
                             </form>
                         </div>                    
@@ -413,11 +333,11 @@
     <footer>
         <div class="pieDePagina">
             <div>
-                <p>©2021 - Grupo Bombastic</p>
+                <p>ï¿½2021 - Grupo Bombastic</p>
             </div> 
             <div>
-                <img src="../../img/iconVisa.png" alt="">
-                <img src="../../img/iconPagoEfectivo.png" alt="">
+                <img src="img/iconVisa.png" alt="">
+                <img src="img/iconPagoEfectivo.png" alt="">
             </div>
         </div>
     </footer>

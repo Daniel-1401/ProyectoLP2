@@ -1,7 +1,10 @@
 package servlet;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -10,7 +13,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import beans.listarproductoDTO;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileItemFactory;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
 import DAO.DAOFactory;
 import interfaces.productoDAO;
 import mantenimiento.MySQLProductoDAO;
@@ -52,10 +59,10 @@ public class productoServlet extends HttpServlet {
 		System.out.println("-- Entro al Servlet de producto --");
 		String opc = request.getParameter("opcion");
 		opc = (opc == null ? "error" : opc);
-		System.out.println("-- Opcion delesccionada: " + opc + " --");
+		System.out.println("-- Opcion selesccionada: " + opc + " --");
 		
 		switch(opc) {
-		case "r": registrar(request,response); break;
+		case "r": añadirProducto(request,response); break;
 		case "a": actualizar(request,response); break;
 		case "e": eliminar(request,response); break;
 		case "l": listar(request,response); break;
@@ -72,6 +79,34 @@ public class productoServlet extends HttpServlet {
 		}
 
 		
+
+		private void añadirProducto(HttpServletRequest request, HttpServletResponse response) {
+			String 	codigoProducto = request.getParameter("txtCodigoProducto");
+			String 	modeloProducto = request.getParameter("txtModeloProducto");
+			String	codCategoria   = request.getParameter("cboCategoria");
+			
+//			ArrayList<String> lista = new ArrayList<>();
+//			insertProductoDTO p = new insertProductoDTO();
+//			try {
+//				FileItemFactory file = new  DiskFileItemFactory();
+//				ServletFileUpload fileUpload = new ServletFileUpload(file);
+//				List item = fileUpload.parseRequest(request);
+//				for (int i = 0; i < item.size(); i++) {
+//					FileItem fileItem = (FileItem)item.get(i);
+//					if(!fileItem.isFormField()) {
+//						File f = new File("\\ProyectoLP2\\src\\main\\webapp\\img\\imagenes" + fileItem.getName());
+//						fileItem.write(f);
+//						p.setImagen(f.getAbsolutePath());
+//					}
+//					else {
+//						lista.add(fileItem.getString());
+//					}
+//				}
+//				p.setCodCategoria(0);
+//			} catch (Exception e) {
+//				// TODO: handle exception
+//			}
+	}
 
 		private void seleccionar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			// Obetener la informacion de un producto y lo envia a la pagina compra
@@ -215,41 +250,7 @@ public class productoServlet extends HttpServlet {
 		//error	request.setAttribute("mensaje", mensaje);
 		//error		request.getRequestDispatcher(url).forward(request, response);
 			
-		//error}
-
-		private void registrar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			// TODO Auto-generated method stub
-			System.out.println("Ingreso al servlet de registroUsuario");
-			// variables
-			String mensaje = "";
-			String url;
-			
-			//entradas
-			String id = request.getParameter("txtid");
-			String descripcion = request.getParameter("txtdescrip");
-			int stock = Integer.parseInt(request.getParameter("stock"));
-			int idCategoria = Integer.parseInt(request.getParameter("idcat"));
-			double precio = Double.parseDouble(request.getParameter("precio"));
-			int estado = Integer.parseInt(request.getParameter("estado"));
-			//error	ProductoDTO p = new ProductoDTO(id,descripcion, stock, idCategoria, precio, estado);
-			
-			
-			//procesos
-			MySQLProductoDAO gu = new MySQLProductoDAO();
-			//error	int ok = gu.registrar(p);
-			
-			//error if (ok == 0) {
-				mensaje = "Error al registrar los datos,revisar";
-				url = "/RegistroProd.jsp";
-				//error }else {
-				//error	mensaje = "<script>alert('Registro OK, listo para ingresar');</script>";
-				url = "/listado.jsp";
-			}
-			
-			// salidas
-		//error request.setAttribute("mensaje", mensaje);
-		//error	request.getRequestDispatcher(url).forward(request, response);
-			
+		//error}			
 		}
 
 //error	}

@@ -21,7 +21,8 @@
 
     <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/cssPagAdmin/GeneralCRUD.css">
-    <link rel="stylesheet" href="../../css/cssPagAdmin/crudActualizar.css">
+    <link rel="stylesheet" href="../../css/cssPagAdmin/crudListar.css">
+    <!-- <link rel="stylesheet" href="../../css/cssPagAdmin/crudActualizar.css"> -->
     <link rel="stylesheet" href="../../css/cssPagAdmin/crudEliminar.css">
     
 </head>
@@ -92,90 +93,78 @@
                 </div>
             </div>
             <div class="contenido">
-              
                 <div class="container">
                   <table class="table table-hover" id="myTable">
                     <thead>			
                       <tr>
-
-                        <th></th>
+                        <th>IMAGEN</th>
                         <th>MARCA</th>
                         <th>MODELO</th>
                         <th>CATEGORIA</th>
                         <th>STOCK</th>
                         <th>PRECIO</th>
-                     	<th></th>
-                        
+                        <th></th>
                       </tr>							
                     </thead>
-                    
                     <tbody>
                       <tr class="grilla_campo">
-                        <td><img alt="imagen de producto"
-                          src="./img/productos/${x.id }.png" width="60px;"></td>
-                        <td>${x.marca}</td>
-                       	<td>${x.modelo}</td>
-                       	<td>${x.categoria}</td>
-                        <td>${x.stock }</td>
                         <td>
-                          <fmt:setLocale value="es_PE"/>
-                          <fmt:formatNumber type="currency" value="${x.precio }" />
+                          <img alt="imagen de producto" src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" width="60px;">
                         </td>
-                        
+                        <td>MARCA 1</td>
+                        <td>MODELO 1</td>
+                        <td>CATEGORIA 1</td>
+                        <td>100</td>
                         <td>
-                        
+                          9999.99
+                          <!-- <fmt:setLocale value="es_PE"/>
+                          <fmt:formatNumber type="currency" value="${x.precio }" /> -->
+                        </td>
+                        <td>
                           <div class="d-grid gap-2 d-md-block">
-  		<button class="btn btn-primary" type="button">Modificar</button>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Eliminar producto</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <form action="">
+                              <button class="btn btn-primary" type="button">Modificar</button>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
+                            </form>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Eliminar producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <form action="">
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Codigo:</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+                                        </div>
+                                        </br>
+                                        <div class="modalEliminar">
+                                          <div class="form-group contenedorImg">
+                                            <div class="ContenedorimagenProductoEliminar">
+                                              <div class="imagenProdEliminar">
+                                                <img class="imagenEliminar" alt="imagen de producto" src="../../img/imgProductos/LaptopLenovo_Legion5_S1.jpg" width="60px;">
+                                              </div>              
+                                            </div>                                      
+                                          </div>
+                                          <div class="botonesEliminar">
+                                              <div class="botonDelete d-grid gap-2">
+                                                <button class="btn btn-primary" type="button">ELIMINAR</button>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
                             </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Codigo:</label>
-                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    
-                                    <div class="controlarform"></div>
-                                    
-                                    </br>
-                                    <div class="controlarimg">
-                                   <div class="form-group">
-                                    	
-                                      	<label for="exampleInputPassword1">Imagen del producto</label> 
-                                      	         <div>                 
-                                      	</br><img alt="imagen de producto" src="./img/productos/${x.id }.png" width="60px;">
-                                      			</div>  
-
-                                    </div>
-                                    </div>
-                           </div>
-                                    
-                                    <div class="botonesModal d-grid gap-2 d-md-block"">
-                                        <button class="btn btn-primary" type="button">Aceptar</button>
-                                      
-                                        <button class="btn btn-primary" type="button">Cancelar</button>
-                                    </div>
-                                    </div>
-                                </form>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>						</div>
-                          
+                          </div>
                         </td>
-                        
                       </tr>
                     </tbody>
                   </table>
-                </div>
-              
+                </div>            
             </div>
         </div>
     </main>

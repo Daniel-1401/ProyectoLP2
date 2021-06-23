@@ -2,9 +2,8 @@ package interfaces;
 
 import java.util.ArrayList;
 
-import beans.listarproductoDTO;
+import beans.productosDTO;
 
 public interface administradorDAO {
 	
-	public ArrayList<listarproductoDTO> listarProd();
 }

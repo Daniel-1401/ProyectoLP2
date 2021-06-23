@@ -1,32 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    
-    
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet icon" href="../img/logo.png">
+    <link rel="stylesheet icon" href="img/logo.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../css/cssPagAdmin/GeneralCRUD.css">
-    <link rel="stylesheet" href="../../css/cssPagAdmin/crudAñadir.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/cssPagAdmin/GeneralCRUD.css">
+    <link rel="stylesheet" href="css/cssPagAdmin/crudAï¿½adir.css">
 </head>
 <body>
 	<main>
 		<div class="content">
 			<div class="logo">
-				<img class="imglogo" src="../../img/logo.png" alt="">
+				<img class="imglogo" src="img/logo.png" alt="">
 			</div>
 			<div class="usuario">
 				<div class="iconUsuario">
-					<img src="../../img/login.png" alt="">
+					<img src="img/login.png" alt="">
 				</div>
 				<div class="nombre">
 					<h2>$NOMBRE$</h2>
@@ -35,7 +33,7 @@
 			<div class="userMenu">
 				<div class="userMenu">
 					<div class="imgUser">
-						<img src="../../img/login.png" alt="">
+						<img src="img/login.png" alt="">
 					</div>
 					<h2>$full nombre$</h2>
 				</div>
@@ -54,7 +52,7 @@
 								class="accordion-collapse collapse show"
 								aria-labelledby="panelsStayOpen-headingOne">
 								<div class="accordion-body ">
-									<li><a href="">Añadir</a></li>
+									<li><a href="">Aï¿½adir</a></li>
 								</div>
 								
 								<div class="accordion-body">
@@ -87,23 +85,23 @@
 			</div>
 			<div class="contenidoPrincipal">
 				<section style="width: 65%;float: left;">
-                    <h2>Añadir nuevo producto de cuenta</h2>
-                    <form action="us" method="post">
+                    <h2>Aï¿½adir nuevo producto de cuenta</h2>
+                    <form action="prodServ" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="exampleInputCodigo1">Codigo :</label> <input
-                                type="text" class="form-control" id="exampleInputcodigo"
+                            <label for="exampleInputCodigo1">Codigo :</label> 
+                            <input type="text" class="form-control" id="exampleInputcodigo"
                                 placeholder="Ingrese codigo del producto" name="txtCodigoProducto">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputModelo1">Modelo del producto :</label> <input
-                                type="text" class="form-control" id="exampleInputmodelo"
+                            <label for="exampleInputModelo1">Modelo del producto :</label>
+                             <input type="text" class="form-control" id="exampleInputmodelo"
                                 placeholder="Ingrese modelo del producto" name="txtModeloProducto">
                         </div>
                         <div class="columnas">
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Categoria :</label>
                                 <div class="form-group">
-                                    <select name="cboCliente" class="form-control" >
+                                    <select name="cboCategoria" class="form-control" >
                                         <option value="">Seleccionar</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
@@ -176,14 +174,24 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect4">Sistema Operativo :</label>
+                                <div class="form-group">
+                                    <select name="cboSistemaOperativo" class="form-control" >
+                                        <option value="-1">Seleccionar</option>
+                                        <option value="1">BLABLABLABLABLABLABLA</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputCodigo1">Precio :</label> <input
-                                type="number" class="form-control" id="exampleInputcodigo"
-                                placeholder="Ingrese precio del producto" name="txtPrecio" min="1000">
+                            <label for="exampleInputCodigo1">Imagen :</label> 
+                            <input type="file" class="form-control" id="exampleInputimagen" placeholder="Seleccione imagen" name="txtImagen">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary" name="opcion" value="l">Añadir</button>
+                        <button type="submit" class="btn btn-primary" name="opcion" value="aï¿½adirProducto">Aï¿½adir</button>
                     </form>
                 </section>
 			</div>

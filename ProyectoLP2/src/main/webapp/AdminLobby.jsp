@@ -12,17 +12,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../../css/cssPagAdmin/GeneralCRUD.css">
+	<link rel="stylesheet" href="css/cssPagAdmin/GeneralCRUD.css">
 </head>
 <body>
 	<main>
 		<div class="content">
 			<div class="logo">
-				<img class="imglogo" src="../../img/logo.png" alt="">
+				<img class="imglogo" src="img/logo.png" alt="">
 			</div>
 			<div class="usuario">
 				<div class="iconUsuario">
-					<img src="../../img/login.png" alt="">
+					<img src="img/login.png" alt="">
 				</div>
 				<div class="nombre">
 					<h2>$NOMBRE$</h2>
@@ -31,7 +31,7 @@
 			<div class="userMenu">
 				<div class="userMenu">
 					<div class="imgUser">
-						<img src="../../img/login.png" alt="">
+						<img src="img/login.png" alt="">
 					</div>
 					<h2>$full nombre$</h2>
 				</div>

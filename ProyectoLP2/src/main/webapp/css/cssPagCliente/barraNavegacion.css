@@ -15,7 +15,7 @@
 .barraUsuario{
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 5px;
 }
 .Usuario, .Carrito{

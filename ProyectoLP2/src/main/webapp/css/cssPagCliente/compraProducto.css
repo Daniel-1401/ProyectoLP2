@@ -1,4 +1,6 @@
-
+body{
+	background: rgb(181, 214, 214);
+}
 main{
     display: flex;
 }

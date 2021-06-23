@@ -1,14 +1,14 @@
 package interfaces;
 
-import beans.insertProductoDTO;
-import beans.listarproductoDTO;
+
+import beans.productosDTO;
 
 public interface productoDAO {
 	
-//	public int registrar (insertProductoDTO prod);
+	public int registrar (productosDTO prod);
 	
-	public int actualizar (listarproductoDTO prod);
+	public int actualizar (productosDTO prod);
 	
-	public int eliminar (listarproductoDTO prod);
+	public int eliminar (productosDTO prod);
 	
 }
